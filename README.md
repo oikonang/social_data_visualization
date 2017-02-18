@@ -1,2 +1,2 @@
 # 02806 Social data analysis and visualization
-* [https://github.com/suneman/socialdataanalysis2017/wiki](Github Wiki)
+* [Github Wiki](https://github.com/suneman/socialdataanalysis2017/wiki)
