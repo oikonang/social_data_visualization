@@ -2,12 +2,44 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>D3 Page Template</title>
+        <title>D3 First page</title>
         <script type="text/javascript" src="d3/d3.js"></script>
+        <style type="text/css">
+            p {
+                font-size: 24px;
+                font-weight: bold;
+				font-family: Helvetica, Arial, sans-serif;
+            }
+        </style>
     </head>
     <body>
         <script type="text/javascript">
-            // Your beautiful D3 code will go here
+          var dataset = [ 5, 10, 15, 20, 25 ];
+
+          d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(d) {
+              return "I can count up to " + d;
+            })
+
+          .style("color", function(d) {
+            if (d > 15) {   //Threshold of 15
+              return "red";
+            } else {
+              return "black";
+            }
+          });
         </script>
+
+    		<svg width="280" height="140">
+    			<rect x="0" y="60" width="80" height="80" fill="purple" opacity="1" stroke="gray" stroke-width="2"/>
+    			<rect x="50" y="45" width="80" height="80" fill="blue" opacity="0.8" stroke="gray" stroke-width="2"/>
+    			<rect x="100" y="30" width="80" height="80" fill="green" opacity="0.6" stroke="gray" stroke-width="2"/>
+    			<rect x="150" y="15" width="80" height="80" fill="yellow" opacity="0.4" stroke="gray" stroke-width="2"/>
+    			<rect x="200" y="0" width="80" height="80" fill="red" opacity="0.2" stroke="gray" stroke-width="2"/>
+    		</svg>
+
     </body>
 </html>
