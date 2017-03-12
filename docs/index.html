@@ -10,6 +10,24 @@
                 font-weight: bold;
 				font-family: Helvetica, Arial, sans-serif;
             }
+            div.space {
+                width:700px;
+                height:80px;
+            }
+            div.bar {
+                display: inline-block;
+                width: 20px;
+                height: 75px;   /* We'll override height later */
+                background-color: teal;
+                margin-right: 2px;
+            }
+            div.p {
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+            }
+ 
+            }
         </style>
     </head>
     <body>
@@ -40,6 +58,70 @@
     			<rect x="150" y="15" width="80" height="80" fill="yellow" opacity="0.4" stroke="gray" stroke-width="2"/>
     			<rect x="200" y="0" width="80" height="80" fill="red" opacity="0.2" stroke="gray" stroke-width="2"/>
     		</svg>
+        <!--Create a space div-->
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="space">
+            <p>Create a barplot with randomly generated numbers as divs</p>
+        </div>
+        <!--Create a barplot with randomly generated numbers as divs-->
+        <script type="text/javascript">
+          var dataset = [];
+          for (var i = 0; i < 25; i++) {
+             var newNumber = Math.round(Math.random() * 30);
+             dataset.push(newNumber);
+          }
 
+          d3.select("body").selectAll("div")
+            .data(dataset)
+            .enter()
+            .append("div")
+            .attr("class", "bar")
+            .style("height", function(d) {
+              var barHeight = d * 5;  //Scale up by factor of 5
+              return barHeight + "px";
+            });
+        </script>
+        <!--Create a space div-->
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="space">
+            <p>Create a barplot with randomly generated numbers as SVGs</p>
+        </div>
+        <!--Create a barplot with randomly generated numbers as SVGs-->
+        <script type="text/javascript">
+            //Create the random dataset
+            var dataset_2 = [];
+            for (var i = 0; i < 24; i++) {
+                var newNumber = Math.round(Math.random() * 30);
+                dataset_2.push(newNumber);
+            }
+
+            //Width and height
+            var w = 700;
+            var h = 150;
+
+            //Create SVG element
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            //Add a rectangle to each element
+            svg.selectAll("rect")
+               .data(dataset_2)
+               .enter()
+               .append("rect")
+               .attr("fill", "teal")
+               .attr("x", 0)
+               .attr("y", function(d) {
+                    return h - (d * 4);  //Height minus data value to turn the plot upside-down
+                })
+               .attr("width", 20)
+               .attr("height", function(d) {
+                    return d * 5 ;  //Just the data value
+                })
+               .attr("x", function(d, i) {
+                    return i * 22;  //Bar width of 20 plus 2 for padding
+                });
+        </script>
     </body>
 </html>
