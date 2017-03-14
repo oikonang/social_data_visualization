@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 First page</title>
+        <script type="text/javascript" src="../d3/d3.js"></script>
+        <style type="text/css">
+            p {
+                font-size: 24px;
+                font-weight: bold;
+				font-family: Helvetica, Arial, sans-serif;
+            }
+            div.space {
+                width:700px;
+                height:80px;
+            }
+            div.bar {
+                display: inline-block;
+                width: 20px;
+                height: 75px;   /* We'll override height later */
+                background-color: teal;
+                margin-right: 2px;
+            }
+            div.p {
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+            }
+ 
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+          var dataset = [ 5, 10, 15, 20, 25 ];
+
+          d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(d) {
+              return "I can count up to " + d;
+            })
+
+          .style("color", function(d) {
+            if (d > 15) {   //Threshold of 15
+              return "red";
+            } else {
+              return "black";
+            }
+          });
+        </script>
+
+    		<svg width="280" height="140">
+    			<rect x="0" y="60" width="80" height="80" fill="purple" opacity="1" stroke="gray" stroke-width="2"/>
+    			<rect x="50" y="45" width="80" height="80" fill="blue" opacity="0.8" stroke="gray" stroke-width="2"/>
+    			<rect x="100" y="30" width="80" height="80" fill="green" opacity="0.6" stroke="gray" stroke-width="2"/>
+    			<rect x="150" y="15" width="80" height="80" fill="yellow" opacity="0.4" stroke="gray" stroke-width="2"/>
+    			<rect x="200" y="0" width="80" height="80" fill="red" opacity="0.2" stroke="gray" stroke-width="2"/>
+    		</svg>
+        <!--Create a space div-->
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="space">
+            <p>Create a barplot with randomly generated numbers as divs</p>
+        </div>
+
+        <!--Create the random dataset function that returns a list of rundom numbers-->
+        <script type="text/javascript">
+          function randomizer(number){
+                var dataset = [];
+                for (var i = 0; i < number; i++) {
+                    var newNumber = Math.round(Math.random() * 30);
+                    dataset.push(newNumber)
+                }
+                return dataset;
+            }
+
+          d3.select("body").selectAll("div")
+            .data(randomizer(25))
+            .enter()
+            .append("div")
+            .attr("class", "bar")
+            .style("height", function(d) {
+              var barHeight = d * 5;  //Scale up by factor of 5
+              return barHeight + "px";
+            });
+        </script>
+        <!--Create a space div-->
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="space">
+            <p>Create a barplot with randomly generated numbers as SVGs</p>
+        </div>
+        <!--Create a barplot with randomly generated numbers as SVGs-->
+        <script type="text/javascript">
+            //Width and height
+            var w = 700;
+            var h = 150;
+            var barPadding = 2;
+
+            //Create SVG element
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            //Add a rectangle to each element
+            svg.selectAll("rect")
+               .data(randomizer(24))
+               .enter()
+               .append("rect")
+               .attr("fill", function(d) {
+                    return "rgb(100, 100, " + (d * 10) + ")";
+                })
+               .attr("x", 0)
+               .attr("y", function(d) {
+                    return h - (d * 4);  //Height minus data value to turn the plot upside-down
+                })
+               .attr("width", 20)
+               .attr("height", function(d) {
+                    return d * 5 ;  //Just the data value
+                })
+               .attr("x", function(d, i) {
+                    return i * (20 + barPadding);  //Bar width of 20 plus 2 for padding
+                });
+
+            //Add text(values) at the top of each rect
+            svg.selectAll("text")
+               .data(dataset)
+               .enter()
+               .append("text")
+               .text(function(d) {
+                    return d;
+               })
+               .attr("x", function(d, i) {
+                    return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
+                })
+               .attr("y", function(d) {
+                    return h - (d * 4) + 15;
+               })
+               .attr("font-family", "sans-serif")
+               .attr("font-size", "11px")
+               .attr("fill", "white"); 
+        </script>
+        <!--Create a space div-->
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="space">
+            <p>Create a barplot with randomly generated numbers as divs</p>
+        </div>
+        <!--Create a scatterplot with randomly generated numbers as SVGs-->
+        <script type="text/javascript">
+        </script>
+    </body>
+</html>
