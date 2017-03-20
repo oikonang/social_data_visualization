@@ -36,7 +36,7 @@ d3.csv("total.csv", function(data) {
     //var legend = d3.legend();              
 
     //Create SVG element
-    var svg = d3.select("body")
+    var svg = d3.select("#area1")
                 .append("svg")
                 .attr("width", w)
                 .attr("height", h);

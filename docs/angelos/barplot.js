@@ -28,28 +28,36 @@ d3.csv("crime_occurences.csv", function(data) {
     //Define Y axis
     var yAxis_b = d3.axisLeft()
                     .scale(yScale_b);
-                    //.tickFormat(formatPercent);
+
+    //Create tip
+    var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0])
+                .html(function(d) {
+                  return "<strong>Frequency:</strong> <span style='color:red'>" + d.count + "</span>";
+                })
 
     //Create SVG element
-    var svg_b = d3.select("body")
+    var svg_b = d3.select("#area2")
                 .append("svg")
                 .attr("width", w_b)
                 .attr("height", h_b);
+    
+    // Call the tip
+    svg_b.call(tip);
 
     //Add a rectangle to each element
-    svg_b.selectAll("rect")
+    svg_b.selectAll(".bar")
            .data(dataset_b)
            .enter()
            .append("rect")
-           .attr("fill", function(d) {
-                return "rgb(100, 100, " + (+d.count * 10) + ")";
-            })
+           .attr("class", "bar")
            .attr("x", function(d) { return xScale_b(d.Category); })
            .attr("y", function(d) { return  yScale_b(+d.count); }) //invert yaxis upside-down
            .attr("width", xScale_b.bandwidth())
-           .attr("height", function(d,i) { return h_b - yScale_b(+d.count);});   //invert yaxis upside-down
-
-           
+           .attr("height", function(d,i) { return h_b - yScale_b(+d.count);})   //invert yaxis upside-down
+           .on('mouseover', tip.show)
+           .on('mouseout', tip.hide);
 
     svg_b.append("g")
            .attr("class", "x axisb")
@@ -67,16 +75,23 @@ d3.csv("crime_occurences.csv", function(data) {
            .attr("transform", "translate(0,0)")  // + 5 + "
            .call(yAxis_b);
 
+    // Text label for the Y axis
+    svg_b.append("text")
+         .attr("transform", "rotate(-90)")
+         .attr("y", 0 - padding_b*3)
+         .attr("x",0 - (h_b / 2))
+         .attr("dy", "1em")
+         .attr("font-family", "sans-serif")
+         .style("text-anchor", "middle")
+         .text("FREQUENCY");
 
-               // svg.selectAll(".bar")
-               //    .data(data)
-               //    .enter()
-               //    .append("rect")
-               //    .attr("class", "bar")
-               //    .attr("x", function(d) { return x(d.letter); })
-               //    .attr("width", x.rangeBand())
-               //    .attr("y", function(d) { return y(d.frequency); })
-               //    .attr("height", function(d) { return height - y(d.frequency); })
-               //    .on('mouseover', tip.show)
-               //    .on('mouseout', tip.hide)
+    // Text for the title of the plot
+    svg_b.append("text")
+         .attr("class", "text title") 
+         .attr("transform","translate(" + w_b/2 + ",0)")
+         .style("text-anchor","middle")
+         .attr("font-family", "sans-serif")
+         .attr("font-size", "20px")
+         .text("Frequency of San Francisco categories of crimes (2003-2016)");
+
 });
