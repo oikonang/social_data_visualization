@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>D3 Page Template</title>
-        <script type="text/javascript" src="../d3/d3.js"></script>
-    </head>
-    <body>
-        <script type="text/javascript">
-            d3.select("body").append("p").text("New paragraph!");
-        </script>
-        <button type="button">BUTTON</button>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>D3 Page Template</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="d3.js"></script>
+</head>
+<body>
+    <div id="numbers">
+    </div>
+    <svg id="drawing">
+    </svg>
+    <button onclick="refresh()">REFRESH DRAWINGS</button>
+    <script type="text/javascript" src="main.js"></script>
+</body>
 </html>
