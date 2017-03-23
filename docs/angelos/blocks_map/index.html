@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Week 7</title>
+        <script type="text/javascript" src="d3.js"></script>
+        <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+        <style type="text/css">
+        button{
+          width: 200px;
+          background-color:rgba(0, 0, 0, 0.2);
+          font-size:16px;
+          text-align:center;
+          border-radius: 5px;
+        }
+        </style>
+    </head>  
+    <body>
+            <!--Create the buttons -->
+            <div class="btn-group-lg" role="group" aria-label="...">
+                <button type="button" class="btn k2">K=2</button>
+                <button type="button" class="btn k3">K=3</button>
+                <button type="button" class="btn k4">K=4</button>
+                <button type="button" class="btn k5">K=5</button>
+                <button type="button" class="btn k6">K=6</button>
+            </div>
+            <!--Call the map script -->
+            <script type="text/javascript">
+            
+            //Width and height
+            var w = 1000;
+            var h = 800;  
+            var colors = ['coral','green','steelblue','yellow','cyan','pink','seagreen','skyblue','salmon']
+            var numberOfButtons = 5;
+
+            //Create the centroids
+            var centroids_2 = [[-122.41721258127922, 37.787394262218022], [-122.41924311718914, 37.760004216652128]]
+            var centroids_3 = [[-122.41582476469686, 37.761346056903406], [-122.41709742374232, 37.787424549878409], [-122.47811474903897, 37.738906485698408]]
+            var centroids_4 = [[-122.41708247002195, 37.787427118841762], [-122.41579332831969, 37.761446811162173], [-122.46632498052548, 37.718814247089576], [-122.48639782848089, 37.758572304670537]]
+            var centroids_5 = [[-122.41584224261476, 37.761425698684391], [-122.41876997704011, 37.787654471039687], [-122.46632498052548, 37.718814247089576], [-122.48639782848089, 37.758572304670537], [-122.4045346858759, 37.785530686729118]]
+            var centroids_6 = [[-122.4045346858759, 37.785530686729118], [-122.41599755987995, 37.761710403228989], [-122.46952143243395, 37.719173519869869], [-122.41876997704011, 37.787654471039687], [-122.48636572534035, 37.758689247617198], [-122.40540320357452, 37.727577617551638]]
+
+            //Define projection for the bounding box
+            var projection = d3.geoMercator()
+                               .center([-122.433701, 37.767683])
+                               .scale(250000) //zoom-in (default=1000)
+                               .translate([w / 2, h / 2]);
+
+            //Define path generator
+            var path = d3.geoPath()
+                         .projection(projection);
+
+            //Create SVG element
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+        
+            //Load the json coordinates and print the map
+            d3.json("geo.json", function(json) {
+                svg.selectAll("path")
+                   .data(json.features)
+                   .enter()
+                   .append("path")
+                   .attr("d", path)
+                   .attr("stroke", "white")
+                   .attr("stroke-width", 2)
+                   .attr("stroke-opacity", 0.3)
+                   .style("fill", "black")
+                   .style("opacity", "0.4");
+
+            });
+            //Load in cluster data and print the points on the map
+            d3.csv("clusters.csv", function(data) {
+
+                svg.selectAll(".points")
+                   .data(data)
+                   .enter()
+                   .append("circle")
+                   .attr("class", "points")
+                   .attr("cx", function(d) {
+                     return projection([d.X, d.Y])[0];
+                   })
+                   .attr("cy", function(d) {
+                     return projection([d.X, d.Y])[1];
+                   })
+                   .attr("r", 5)
+                   .style("fill", function(d){
+                      return colors[d.clusters_2]; 
+                   })
+                   .style("opacity", 0.3);
+
+                //Load the centroids
+                svg.selectAll(".centr_points")
+                   .data(centroids_2)
+                   .enter()
+                   .append("circle")
+                   .attr("class", "centr_points")
+                   .attr("cx", function(d) {
+                      return projection(d)[0];
+                    })
+                   .attr("cy", function(d){
+                      return projection(d)[1];
+                   })
+                   .attr("r", 15)
+                   .attr("stroke", "white")
+                   .attr("stroke-width", 3)
+                   .style("fill", "black");
+
+                // Text for the title of the plot
+                svg.append("text")
+                   .attr("class", "text title") 
+                   .attr("transform","translate(" + w/2 + ",80)")
+                   .style("text-anchor","middle")
+                   .attr("font-family", "sans-serif")
+                   .attr("font-size", "20px")
+                   .text("KNN for K = 2");
+
+                //////////////////////////////////////On mouseover K = 2(bring the defaults)/////////////////
+                d3.select(".btn.k2").on("mouseover", function(){
+                    //Bring centroids to default position
+                    svg.selectAll(".centr_points")
+                       .data(centroids_2)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", function(d) {
+                        console.log(d);         /////////////////////////////
+                          return projection(d)[0];
+                       })
+                       .attr("cy", function(d){
+                          return projection(d)[1];
+                       });
+                    //Remove k=3 parameters
+                    svg.selectAll(".centr_points_extra_k3").remove();
+                    svg.selectAll(".text.title").text("KNN for K = 2");
+                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_2]; });
+                    //Remove k=4,5,6 parameters
+                    svg.selectAll(".centr_points_extra_k4").remove();
+                    svg.selectAll(".centr_points_extra_k5").remove();
+                    svg.selectAll(".centr_points_extra_k6").remove();
+                });
+
+                //////////////////////////////////////On mouseover K = 3////////////////////////////////////
+                d3.select(".btn.k3").on("mouseover", function(){
+
+                    //Remove k=4,5,6 parameters
+                    svg.selectAll(".centr_points_extra_k4").remove();
+                    svg.selectAll(".centr_points_extra_k5").remove();
+                    svg.selectAll(".centr_points_extra_k6").remove();
+                    //Update colors
+                    svg.selectAll(".points")
+                       .style("fill", function(d){
+                      return colors[d.clusters_3]; 
+                    });
+
+                    //Update centroids (2 initial centroids)
+                    svg.selectAll(".centr_points")
+                       .data(centroids_3)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", function(d) {
+                        console.log(d);         /////////////////////////////
+                          return projection(d)[0];
+                       })
+                       .attr("cy", function(d){
+                          return projection(d)[1];
+                       });
+                    //Update centroid position k3 if before at k=4
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_3)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_3[2])[0])
+                       .attr("cy", projection(centroids_3[2])[1]);
+                    //Create missing centroid if before at k=2
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_3)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k3")
+                       .attr("cx", projection(centroids_3[2])[0])
+                       .attr("cy", projection(centroids_3[2])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Change title
+                    svg.selectAll(".text.title")
+                       .text("KNN for K = 3");
+                    });
+                
+                //////////////////////////////////////On mouseover K = 4////////////////////////////////////
+                d3.select(".btn.k4").on("mouseover", function(){
+
+                    //Remove k=5,6 parameters
+                    svg.selectAll(".centr_points_extra_k5").remove();
+                    svg.selectAll(".centr_points_extra_k6").remove();
+                    //Update colors
+                    svg.selectAll(".points")
+                       .style("fill", function(d){
+                      return colors[d.clusters_4]; 
+                    });
+
+                    //Update centroids (2 initial centroids)
+                    svg.selectAll(".centr_points")
+                       .data(centroids_4)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", function(d) {
+                        console.log(d);         /////////////////////////////
+                          return projection(d)[0];
+                       })
+                       .attr("cy", function(d){
+                          return projection(d)[1];
+                       });
+                    //Update centroid potition k3 if before at k=3
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_4)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_4[2])[0])
+                       .attr("cy", projection(centroids_4[2])[1]);
+                    //Update centroid position k4 if before at k=5
+                    svg.selectAll(".centr_points_extra_k4")
+                       .data(centroids_4)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_4[3])[0])
+                       .attr("cy", projection(centroids_4[3])[1]);
+
+                    //Create missing centroid if before at k=2
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_4)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k3")
+                       .attr("cx", projection(centroids_4[2])[0])
+                       .attr("cy", projection(centroids_4[2])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Create missing centroid if before at k=3
+                    svg.selectAll(".centr_points_extra_k4")
+                       .data(centroids_4)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k4")
+                       .attr("cx", projection(centroids_4[3])[0])
+                       .attr("cy", projection(centroids_4[3])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Change title
+                    svg.selectAll(".text.title")
+                       .text("KNN for K = 4");
+                    });
+                //////////////////////////////////////On mouseover K = 5////////////////////////////////////
+                d3.select(".btn.k5").on("mouseover", function(){
+
+                    //Remove k=6 parameters
+                    svg.selectAll(".centr_points_extra_k6").remove();
+                    //Update colors
+                    svg.selectAll(".points")
+                       .style("fill", function(d){
+                      return colors[d.clusters_5]; 
+                    });
+                    //Update centroids (2 initial centroids)
+                    svg.selectAll(".centr_points")
+                       .data(centroids_5)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", function(d) {
+                        console.log(d);         /////////////////////////////
+                          return projection(d)[0];
+                       })
+                       .attr("cy", function(d){
+                          return projection(d)[1];
+                       });
+                    //Update new centroid from k=3
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_5)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_5[2])[0])
+                       .attr("cy", projection(centroids_5[2])[1]);
+                    //Update new centroid from k=4
+                    svg.selectAll(".centr_points_extra_k4")
+                       .data(centroids_5)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_5[3])[0])
+                       .attr("cy", projection(centroids_5[3])[1]);
+                    //Update centroid position k5 if before at k=6
+                    svg.selectAll(".centr_points_extra_k5")
+                       .data(centroids_5)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_5[4])[0])
+                       .attr("cy", projection(centroids_5[4])[1]);
+
+                    //Create missing centroid k3 if before at k=2
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_5)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k3")
+                       .attr("cx", projection(centroids_5[2])[0])
+                       .attr("cy", projection(centroids_5[2])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Create missing centroid k4 if before at k=3
+                    svg.selectAll(".centr_points_extra_k4")
+                       .data(centroids_5)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k4")
+                       .attr("cx", projection(centroids_5[3])[0])
+                       .attr("cy", projection(centroids_5[3])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Create missing centroid k5 if before at k=4
+                    svg.selectAll(".centr_points_extra_k5")
+                       .data(centroids_5)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k5")
+                       .attr("cx", projection(centroids_5[4])[0])
+                       .attr("cy", projection(centroids_5[4])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Change title
+                    svg.selectAll(".text.title")
+                       .text("KNN for K = 5");
+                    });
+                //////////////////////////////////////On mouseover K = 6////////////////////////////////////
+                d3.select(".btn.k6").on("mouseover", function(){
+
+                    //Update colors
+                    svg.selectAll(".points")
+                       .style("fill", function(d){
+                      return colors[d.clusters_6]; 
+                    });
+                    //Update centroids (2 initial centroids)
+                    svg.selectAll(".centr_points")
+                       .data(centroids_6)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", function(d) {
+                        console.log(d);         /////////////////////////////
+                          return projection(d)[0];
+                       })
+                       .attr("cy", function(d){
+                          return projection(d)[1];
+                       });
+                    //Update new centroid from k=3
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_6)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_6[2])[0])
+                       .attr("cy", projection(centroids_6[2])[1]);
+                    //Update new centroid from k=4
+                    svg.selectAll(".centr_points_extra_k4")
+                       .data(centroids_6)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_6[3])[0])
+                       .attr("cy", projection(centroids_6[3])[1]);
+                    //Update new centroid from k=5
+                    svg.selectAll(".centr_points_extra_k5")
+                       .data(centroids_6)
+                       .transition()
+                       .duration(1000)
+                       .attr("cx", projection(centroids_6[4])[0])
+                       .attr("cy", projection(centroids_6[4])[1]);
+
+                    //Create missing centroid k3 if before at k=2
+                    svg.selectAll(".centr_points_extra_k3")
+                       .data(centroids_6)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k3")
+                       .attr("cx", projection(centroids_6[2])[0])
+                       .attr("cy", projection(centroids_6[2])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Create missing centroid k4 if before at k=3
+                    svg.selectAll(".centr_points_extra_k4")
+                       .data(centroids_6)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k4")
+                       .attr("cx", projection(centroids_6[3])[0])
+                       .attr("cy", projection(centroids_6[3])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Create missing centroid k5 if before at k=4
+                    svg.selectAll(".centr_points_extra_k5")
+                       .data(centroids_6)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k5")
+                       .attr("cx", projection(centroids_6[4])[0])
+                       .attr("cy", projection(centroids_6[4])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Create missing centroid k6 if before at k=5
+                    svg.selectAll(".centr_points_extra_k6")
+                       .data(centroids_6)
+                       .enter()
+                       .append("circle")
+                       .transition()
+                       .duration(1000)
+                       .attr("class", "centr_points_extra_k6")
+                       .attr("cx", projection(centroids_6[5])[0])
+                       .attr("cy", projection(centroids_6[5])[1])
+                       .attr("r", 15)
+                       .attr("stroke", "white")
+                       .attr("stroke-width", 3)
+                       .style("fill", "black");
+                    //Change title
+                    svg.selectAll(".text.title")
+                       .text("KNN for K = 6");
+                    });
+            });
+    </script>
+                
+ </body>
+</html>
