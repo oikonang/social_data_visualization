@@ -161,7 +161,24 @@ var svg = d3.select("#svgCirclesArea")
 })
 .style("border","3px solid black");
 refreshSvg();
+
 function refreshSvg() {
+
+	var animateCircles = function(targetElement, speed){
+
+		$(targetElement).css({left:'-200px'});
+		$(targetElement).animate(
+		{
+			'left': $(document).width() + 200
+		},
+		{
+			duration: speed,
+			complete: function(){
+				animateCircles(this, speed);
+			}
+		}
+		);
+	};
 	var dataset = generateRandomData(500);
 	d3.select("#svgCircles").selectAll("circle").remove();
 	var circles = d3.select("#svgCircles").selectAll("circle")
@@ -187,6 +204,9 @@ function refreshSvg() {
 	.style("stroke-width",function(d) {
 		return d/20;
 	})
+	.classed("circles",true);
+
+	//animateCircles($(".circles"),100);
 }
 
 
