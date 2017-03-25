@@ -31,7 +31,7 @@
             var w = 1000;
             var h = 800;  
             var colors = ['coral','green','steelblue','yellow','cyan','pink','seagreen','skyblue','salmon']
-            var numberOfButtons = 5;
+            var buttonFlag = -1;
 
             //Create the centroids
             var centroids_2 = [[-122.41721258127922, 37.787394262218022], [-122.41924311718914, 37.760004216652128]]
@@ -118,40 +118,42 @@
 
                 //////////////////////////////////////On mouseover K = 2(bring the defaults)/////////////////
                 d3.select(".btn.k2").on("mouseover", function(){
+                    //Assign flagger to button
+                    var buttonFlag = 2;
+                    
+                    //Update title and color
+                    svg.selectAll(".text.title").text("KNN for K = 2");
+                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_2]; });
+                    //Remove k=3,4,5,6 centroids
+                    svg.selectAll(".centr_points_extra_k3").remove();
+                    svg.selectAll(".centr_points_extra_k4").remove();
+                    svg.selectAll(".centr_points_extra_k5").remove();
+                    svg.selectAll(".centr_points_extra_k6").remove();
                     //Bring centroids to default position
                     svg.selectAll(".centr_points")
                        .data(centroids_2)
                        .transition()
                        .duration(1000)
                        .attr("cx", function(d) {
-                        console.log(d);         /////////////////////////////
                           return projection(d)[0];
                        })
                        .attr("cy", function(d){
                           return projection(d)[1];
                        });
-                    //Remove k=3 parameters
-                    svg.selectAll(".centr_points_extra_k3").remove();
-                    svg.selectAll(".text.title").text("KNN for K = 2");
-                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_2]; });
-                    //Remove k=4,5,6 parameters
-                    svg.selectAll(".centr_points_extra_k4").remove();
-                    svg.selectAll(".centr_points_extra_k5").remove();
-                    svg.selectAll(".centr_points_extra_k6").remove();
                 });
 
                 //////////////////////////////////////On mouseover K = 3////////////////////////////////////
                 d3.select(".btn.k3").on("mouseover", function(){
+                    //Assign flagger to button
+                    var buttonFlag = 3;
 
-                    //Remove k=4,5,6 parameters
+                    //Update title and color
+                    svg.selectAll(".text.title").text("KNN for K = 3");
+                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_3]; });
+                    //Remove k=4,5,6 centroids
                     svg.selectAll(".centr_points_extra_k4").remove();
                     svg.selectAll(".centr_points_extra_k5").remove();
                     svg.selectAll(".centr_points_extra_k6").remove();
-                    //Update colors
-                    svg.selectAll(".points")
-                       .style("fill", function(d){
-                      return colors[d.clusters_3]; 
-                    });
 
                     //Update centroids (2 initial centroids)
                     svg.selectAll(".centr_points")
@@ -159,7 +161,6 @@
                        .transition()
                        .duration(1000)
                        .attr("cx", function(d) {
-                        console.log(d);         /////////////////////////////
                           return projection(d)[0];
                        })
                        .attr("cy", function(d){
@@ -186,22 +187,19 @@
                        .attr("stroke", "white")
                        .attr("stroke-width", 3)
                        .style("fill", "black");
-                    //Change title
-                    svg.selectAll(".text.title")
-                       .text("KNN for K = 3");
-                    });
+                });
                 
                 //////////////////////////////////////On mouseover K = 4////////////////////////////////////
                 d3.select(".btn.k4").on("mouseover", function(){
+                    //Assign flagger to button
+                    var buttonFlag = 4;
 
-                    //Remove k=5,6 parameters
+                    //Update title and color
+                    svg.selectAll(".text.title").text("KNN for K = 4");
+                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_4]; });
+                    //Remove k=5,6 centroids
                     svg.selectAll(".centr_points_extra_k5").remove();
                     svg.selectAll(".centr_points_extra_k6").remove();
-                    //Update colors
-                    svg.selectAll(".points")
-                       .style("fill", function(d){
-                      return colors[d.clusters_4]; 
-                    });
 
                     //Update centroids (2 initial centroids)
                     svg.selectAll(".centr_points")
@@ -258,20 +256,19 @@
                        .attr("stroke", "white")
                        .attr("stroke-width", 3)
                        .style("fill", "black");
-                    //Change title
-                    svg.selectAll(".text.title")
-                       .text("KNN for K = 4");
-                    });
+                });
+    
                 //////////////////////////////////////On mouseover K = 5////////////////////////////////////
                 d3.select(".btn.k5").on("mouseover", function(){
+                    //Assign flagger to button
+                    var buttonFlag = 5;
 
+                    //Update title and color
+                    svg.selectAll(".text.title").text("KNN for K = 5");
+                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_5]; });
                     //Remove k=6 parameters
                     svg.selectAll(".centr_points_extra_k6").remove();
-                    //Update colors
-                    svg.selectAll(".points")
-                       .style("fill", function(d){
-                      return colors[d.clusters_5]; 
-                    });
+
                     //Update centroids (2 initial centroids)
                     svg.selectAll(".centr_points")
                        .data(centroids_5)
@@ -348,18 +345,17 @@
                        .attr("stroke", "white")
                        .attr("stroke-width", 3)
                        .style("fill", "black");
-                    //Change title
-                    svg.selectAll(".text.title")
-                       .text("KNN for K = 5");
-                    });
+                });
+                    
                 //////////////////////////////////////On mouseover K = 6////////////////////////////////////
                 d3.select(".btn.k6").on("mouseover", function(){
+                    //Assign flagger to button
+                    var buttonFlag = 6;
 
-                    //Update colors
-                    svg.selectAll(".points")
-                       .style("fill", function(d){
-                      return colors[d.clusters_6]; 
-                    });
+                    //Update title and color
+                    svg.selectAll(".text.title").text("KNN for K = 6");
+                    svg.selectAll(".points").style("fill", function(d){return colors[d.clusters_6]; });
+                    
                     //Update centroids (2 initial centroids)
                     svg.selectAll(".centr_points")
                        .data(centroids_6)
@@ -450,10 +446,7 @@
                        .attr("stroke", "white")
                        .attr("stroke-width", 3)
                        .style("fill", "black");
-                    //Change title
-                    svg.selectAll(".text.title")
-                       .text("KNN for K = 6");
-                    });
+                });
             });
     </script>
                 
