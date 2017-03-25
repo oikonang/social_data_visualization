@@ -4,14 +4,28 @@
     <meta charset="utf-8">
     <title>D3 Page Template</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="d3.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
+    <h1>Number example</h1>
     <div id="numbers">
     </div>
-    <svg id="drawing">
-    </svg>
-    <button onclick="refresh()">REFRESH DRAWINGS</button>
+    <h1>Circles example</h1>
+    <div>
+        <svg id="drawing">
+        </svg>
+    </div>
+    <button onclick="refreshCircles()">REFRESH CIRCLES</button>
+    <h1>Bar Chart Example</h1>
+    <div id="bars">
+    </div>
+    <button onclick="refreshBarChart()">REFRESH BAR CHART</button>
+    <h1>Random Circles Example</h1>
+    <div id="svgCirclesArea">
+    </div>
+    <button onclick="refreshSvg()">REFRESH RANDOM CIRCLES</button>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
