@@ -31,7 +31,7 @@ d3.csv("total.csv", function (data) {
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function (d) {
-            var count = +d.count_tot_2015;
+            var count = ParseInt(d.count_tot_2015);
             return "<strong>Frequency:</strong> <span style='color:red'>" + count + "</span>";
         })
 
