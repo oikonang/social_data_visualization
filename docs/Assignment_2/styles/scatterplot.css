@@ -1,31 +1,55 @@
+#scatterplot {
+    padding: 10px;
+}
+
 #scatterplot div#area1{
     display: block;
 }
-#scatterplot .center{
-    margin:auto;
-    width:200px;
-}
+
 #scatterplot .axis path,
 #scatterplot .axis line {
     fill: none;
     stroke: black;
     shape-rendering: crispEdges;
 }
+
+#scatterplot text {
+    font-size: 12px;
+    fill: #212121;
+    font-weight: bold;
+}
+
+.axisLabel {
+    fill: #000 !important;
+}
+
+#scatterplot circle {
+    stroke: #991f00;
+    stroke-width: 2px;
+    fill: #E64A19;
+}
+
 #scatterplot .axis text {
-    font-family: sans-serif;
+    fill: #000;
     font-size: 11px;
 }
+
+#scatterplot .title {
+    font-size: 20px;
+}
+
 #scatterplot svg {
     padding-left: 100px;
     padding-bottom: 30px;
     padding-top: 20px;
 }
 #scatterplot button {
-    background-color:#f2f2f2;;
-    display: block;
+    background-color:#f2f2f2;
     text-align:center;
-    line-height: 20px;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
+}
+#scatterplot button:hover {
+    background-color: #b3b3b3;
 }

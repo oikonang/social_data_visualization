@@ -1,16 +1,31 @@
 html, body {
 	height: 100%;
-	font-family: sans-serif;
+	font-family: 'Roboto',sans-serif;
 	font-size: 18px;
 }
 
 hr {
-	border: 3px dashed black;
+	border: 2px dashed #1976D2;
 	margin: 20px;
 }
 
 h1,h2,h3,h4,h5,h6 {
+	color: #000066;
 	margin: auto;
-	width: 50%;
+	width: auto;
 	text-align: center;
+}
+
+div#content {
+	margin: auto;
+	width: 1200px;
+	background-color: #e6f5c9;
+	border-radius: 20px;
+	box-shadow: -10px 10px 50px #888888;
+	padding: 10px;
+}
+
+p {
+	color: black;
+	padding: 10px;
 }
