@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 2</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/scatterplot.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/barplot.css">
+    <link rel="stylesheet" type="text/css" href="styles/geodata.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>  
+<body>
+    <h1>Assignment 2</h1>
+    <hr/>
+    <div id="barplot">
+
+    </div>
+    <hr/>
+    <div id="scatterplot">
+        <div class="center">
+            <button>Click to change from 2003 to 2015 data</button>
+        </div>
+        <div id="scatterSvg">
+
+        </div>
+    </div>
+    <hr/>
+    <div id="geodata">
+        <div class="btn-group-lg" role="group" aria-label="...">
+            <button type="button" class="btn currentFlag" value="-1" alt="Prostitution Crimes Coordinates">No Clustering</button>
+            <button type="button" class="btn" value="0" alt="KNN for K=2">K=2</button>
+            <button type="button" class="btn" value="1" alt="KNN for K=3">K=3</button>
+            <button type="button" class="btn" value="2" alt="KNN for K=4">K=4</button>
+            <button type="button" class="btn" value="3" alt="KNN for K=5">K=5</button>
+            <button type="button" class="btn" value="4" alt="KNN for K=6">K=6</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/d3-tip.js"></script>
+    <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+    <script type="text/javascript" src="js/barplot.js"></script>
+    <script type="text/javascript" src="js/scatterplot.js"></script>
+    <script type="text/javascript" src="js/geodata.js"></script>   
+</body>
+</html>

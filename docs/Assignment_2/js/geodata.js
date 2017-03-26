@@ -1,53 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>KNN in Prostitution Crimes of San Francinsco</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
-  <style type="text/css">
-    .btn {
-      width: 150px;
-      background-color:#f2f2f2;
-      font-size:16px;
-      text-align:center;
-      border-radius: 5px;
-      height: 40px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background-color: #d9d9d9;
-    }
-    .currentFlag {
-      background-color: #595959 !important;
-      color: white;
-    }
-
-    .title {
-      font-size: 30px;
-      stroke: #000066;
-      fill: #212121;
-    }
-  </style>
-</head>  
-<body>
-  <!--Create the buttons -->
-  <div class="btn-group-lg" role="group" aria-label="...">
-    <button type="button" class="btn currentFlag" value="-1" alt="Prostitution Crimes Coordinates">No Clustering</button>
-    <button type="button" class="btn" value="0" alt="KNN for K=2">K=2</button>
-    <button type="button" class="btn" value="1" alt="KNN for K=3">K=3</button>
-    <button type="button" class="btn" value="2" alt="KNN for K=4">K=4</button>
-    <button type="button" class="btn" value="3" alt="KNN for K=5">K=5</button>
-    <button type="button" class="btn" value="4" alt="KNN for K=6">K=6</button>
-  </div>
-  <!--Call the map script -->
-  <script type="text/javascript">
-    //Width and height
-    var w = 1000;
-    var h = 800;  
-    var colors = ['#E64A19','#388E3C','#303F9F','#FFEB3B','#00BCD4','#FF4081','seagreen','skyblue','salmon'];
+function loadGeodata() {
+//Width and height
+var w = 1000;
+var h = 800;  
+var colors = ['#E64A19','#388E3C','#303F9F','#FFEB3B','#00BCD4','#FF4081','seagreen','skyblue','salmon'];
     var buttonFlag = $(".currentFlag").attr("value"); //Set default to 0 for no clustering
     var title = $(".currentFlag").attr("alt");
     var clusterClasses = ["clusters_2","clusters_3","clusters_4","clusters_5","clusters_6"];
@@ -62,7 +17,7 @@
         }
       });
     }
-    parseJSON("centroids.json");
+    parseJSON("js/centroids.json");
 
     //Define projection for the bounding box
     var projection = d3.geoMercator()
@@ -75,13 +30,13 @@
     .projection(projection);
 
     //Create SVG element
-    var svg = d3.select("body")
+    var svg = d3.select("#geodata")
     .append("svg")
     .attr("width", w)
     .attr("height", h);
 
     //Load the json coordinates and print the map
-    d3.json("geo.json", function(json) {
+    d3.json("js/geo.json", function(json) {
       svg.selectAll("path")
       .data(json.features)
       .enter()
@@ -95,7 +50,7 @@
     });
     
     //Load in cluster data and print the prostitution points on the map 
-    d3.csv("clusters.csv", function(data) {
+    d3.csv("js/clusters.csv", function(data) {
 
       // Create crimes coordinates by default
       svg.selectAll(".points")
@@ -185,7 +140,6 @@
           clustering(title,isPreview);
       });
     });
-  </script>
+  }
 
-</body>
-</html>
+loadGeodata();

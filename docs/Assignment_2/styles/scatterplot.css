@@ -1,0 +1,31 @@
+#scatterplot div#area1{
+    display: block;
+}
+#scatterplot .center{
+    margin:auto;
+    width:200px;
+}
+#scatterplot .axis path,
+#scatterplot .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+#scatterplot .axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+#scatterplot svg {
+    padding-left: 100px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+#scatterplot button {
+    background-color:#f2f2f2;;
+    display: block;
+    text-align:center;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
