@@ -1,5 +1,5 @@
 # Instructions
-Please find relevant instructions 
+Please find relevant instructions about the files and the visualizations below.
 
 ## Web Page with visualizations
 The link to the web page with the D3 visualizations is here: https://oikonang.github.io/social_data_visualization/Assignment_2/
