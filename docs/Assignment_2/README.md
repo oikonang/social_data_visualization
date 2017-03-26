@@ -1,5 +1,6 @@
 # Instructions
 Please find relevant instructions about the files and the visualizations below.
+**IMPORTANT!** Sometimes the KNN map (GitHub's fault) doesn't render with the proper colors the dots in the map, therefore if this happens please try to ***reload the page***.
 
 ## Web Page with visualizations
 The link to the web page with the D3 visualizations is here: https://oikonang.github.io/social_data_visualization/Assignment_2/
