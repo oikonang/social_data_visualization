@@ -73,7 +73,6 @@ var colors = ['#E64A19','#388E3C','#303F9F','#FFEB3B','#00BCD4','#FF4081','seagr
       .attr("class", "text title") 
       .attr("transform","translate(" + w/2 + ",80)")
       .style("text-anchor","middle")
-      .attr("font-family", "sans-serif")
       .attr("font-size", "20px")
       .text(title);
 

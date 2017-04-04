@@ -1,7 +1,20 @@
+//JS Object used to switch between 2003 and 2015 data using a simple button
+function yearSwitcherConstructor(year) {
+  this.currentYear = year;
+  this.prostitutionAttr = "count_pros_"+year;
+  this.vehicleAttr = "count_veh_"+year;
+  this.totalAttr = "count_tot_"+year;
+}
+
+//Load default 2003 data
+currentYear = 2003;
+var yearSwitcher = new yearSwitcherConstructor(currentYear);
+console.log(yearSwitcher);
+
 function loadScatterplot() {
 //Load total data from csv
 d3.csv("js/total.csv", function(data) {
-    dataset = data;
+  dataset = data;
 
     //Width and height
     var w = 1000;
@@ -10,15 +23,15 @@ d3.csv("js/total.csv", function(data) {
 
     //Create scaled x
     var xScale = d3.scaleLinear()
-                   .domain([0, d3.max(dataset, function(d) { return +d.count_pros_2003;})]) // from 0 to maximum value of input(x)
+                   .domain([0, d3.max(dataset, function(d) { return +d[yearSwitcher.prostitutionAttr];})]) // from 0 to maximum value of input(x)
                      .range([padding, w - padding * 2]); //from padding to the number of pixels declared in width - pad in order to avoid the edges
     //Create scaled y
     var yScale = d3.scaleLinear()
-                     .domain([0, d3.max(dataset, function(d) { return +d.count_veh_2003; })]) // from 0 to maximum value of input(y)
+                     .domain([0, d3.max(dataset, function(d) { return +d[yearSwitcher.vehicleAttr]; })]) // from 0 to maximum value of input(y)
                      .range([h - padding, padding]); //from height - padding to the number of pixels declared in pad in order to avoid the edges and turn y upside down
     //Create scaled r(radius) of the scatter points
     var rScale = d3.scaleLinear()
-                     .domain([0, d3.max(dataset, function(d) { return +d.count_tot_2003; })]) // from 0 to maximum value of input(y)
+                     .domain([0, d3.max(dataset, function(d) { return +d[yearSwitcher.totalAttr]; })]) // from 0 to maximum value of input(y)
                      .range([2, 30]); // Size of points   
 
     //Define X axis
@@ -56,14 +69,14 @@ d3.csv("js/total.csv", function(data) {
     .enter()
     .append("circle")
     .attr("cx", function(d) {
-      return xScale(+d.count_pros_2003);
-  }) 
+      return xScale(+d[yearSwitcher.prostitutionAttr]);
+    }) 
     .attr("cy", function(d) {
-      return yScale(+d.count_veh_2003);
-  })
+      return yScale(+d[yearSwitcher.vehicleAttr]);
+    })
     .attr("r", function(d) {
-      return rScale(+d.count_tot_2003);
-  });
+      return rScale(+d[yearSwitcher.totalAttr]);
+    });
 
     //Create labels
     svg.selectAll("text")
@@ -72,16 +85,13 @@ d3.csv("js/total.csv", function(data) {
     .append("text")
     .text(function(d) {
       return d.PdDistrict;
-  })
+    })
     .attr("x", function(d) {
-      return xScale(+d.count_pros_2003);
-  })
+      return xScale(+d[yearSwitcher.prostitutionAttr]);
+    })
     .attr("y", function(d) {
-      return yScale(+d.count_veh_2003);
-  })
-    .attr("font-family", "sans-serif")
-    .attr("font-size", "11px")
-    .attr("fill", "red");
+      return yScale(+d[yearSwitcher.vehicleAttr]);
+    });
 
     //Create X axis
     svg.append("g")
@@ -93,8 +103,8 @@ d3.csv("js/total.csv", function(data) {
     svg.append("text")             
     .attr("transform","translate(" + w/2 + ", " + (h+10) + ")")
     .style("text-anchor", "middle")
-    .attr("font-family", "sans-serif")
-    .text("PROSTITUTION");
+    .text("PROSTITUTION")
+    .classed("axisLabel",true);
 
     //Create Y axis
     svg.append("g")
@@ -108,53 +118,55 @@ d3.csv("js/total.csv", function(data) {
     .attr("y", 0 - padding)
     .attr("x",0 - (h / 2))
     .attr("dy", "1em")
-    .attr("font-family", "sans-serif")
     .style("text-anchor", "middle")
-    .text("VEHICLE THEFT");
+    .text("VEHICLE THEFT")
+    .classed("axisLabel",true);
 
     // Text for the title of the plot
     svg.append("text")
-    .attr("class", "text title") 
     .attr("transform","translate(" + w/2 + ",0)")
     .style("text-anchor","middle")
-    .attr("font-family", "sans-serif")
-    .attr("font-size", "20px")
-    .text("Correlation of San Francisco crimes in 2003");
+    .text("Correlation of San Francisco crimes in "+currentYear)
+    .classed("title",true);
     
 
     //////////////////////////////////////On click update with new data////////////////////////////////////
     d3.select("#scatterplot button").on("click", function(){
-
+      if (currentYear==2003)
+        currentYear = 2015;
+      else
+        currentYear = 2003;
+      yearSwitcher = new yearSwitcherConstructor(currentYear);
         //Update all circles
         svg.selectAll("circle")
         .data(dataset)
         .transition()
         .duration(1000)    
         .attr("cx", function(d) {
-          return xScale(+d.count_pros_2015);
-      })
+          return xScale(+d[yearSwitcher.prostitutionAttr]);
+        })
         .attr("cy", function(d) {
-          return yScale(+d.count_veh_2015);
-      })
+          return yScale(+d[yearSwitcher.vehicleAttr]);
+        })
         .attr("r", function(d) {
-          return rScale(+d.count_tot_2015);
-      });
+          return rScale(+d[yearSwitcher.totalAttr]);
+        });
         //Update label's position
         svg.selectAll("text")
         .data(dataset)
         .transition()
         .duration(1000)
         .attr("x", function(d) {
-          return xScale(+d.count_pros_2015);
-      })
+          return xScale(+d[yearSwitcher.prostitutionAttr]);
+        })
         .attr("y", function(d) {
-          return yScale(+d.count_veh_2015);
-      });
+          return yScale(+d[yearSwitcher.vehicleAttr]);
+        });
         //Update title
-        svg.selectAll(".text.title")
-        .text("Correlation of San Francisco crimes in 2015");
-    });
-});
+        svg.selectAll(".title")
+        .text("Correlation of San Francisco crimes in "+currentYear);
+      });
+  });
 }
 
 loadScatterplot();

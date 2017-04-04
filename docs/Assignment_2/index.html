@@ -2,31 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Assignment 2</title>
+    <title>Social Data Analysis and Visualization - Assignment 2</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/scatterplot.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/barplot.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/barplot.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/geodata.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>  
 <body>
-    <h1>Assignment 2</h1>
-    <hr/>
-    <div id="barplot">
+    <div id="content">
+        <h1>Social Data Analysis and Visualization - Assignment 2</h1>
+        <hr/>
+    <!-- <div id="barplot">
 
     </div>
-    <hr/>
+    <hr/> -->
     <div id="scatterplot">
-        <div class="center">
-            <button>Click to change from 2003 to 2015 data</button>
-        </div>
+        <h2>Assignment 2A: One scatter plot and two datasets</h2>
+        <p>
+            This scatterplot is a representation of the change in number of crimes in SanFrancisco over the years. It seems that if we check the correlation in number of crimes between two different crime categories, and then swipe throught the years we can observe weather the SFPD is doing a good job or not by checking how closer the points in the scatterplot come to the beginning of the axes(0,0). The size of the points relate to the total number of crimes in 2003 and 2015 respectively. Keeping the axes fixed for both visualizations makes it easier to discern the difference between one year and the other, also thanks to the transition. If instead we had rescaled them, we wouldn't have been able to see a clear difference between the two years.
+        </p>
+        <p>
+            Click to toggle between <b>2003</b> to <b>2015</b> data: <button>Change Year</button>               
+        </p>
         <div id="scatterSvg">
 
         </div>
     </div>
     <hr/>
     <div id="geodata">
+        <h2>Assignment 2B: Visualizing geodata</h2>
+        <p>This plot represents data related to crimes in San Francisco. Particularly, the coordinates of this mapplot concern only prostitution crimes from 2003 to 2016. Then, unsupervised learning classification is applied using K-nearest neighbor algorithm at the coordinates for 2,3,4,5 and 6 nearest neighbors. The file should be as light as possible in order for Javascript to quickly load the files and render the D3 visualization faster.
+            <ul>
+                <li>On mouse over you may see a preview of the classification along with the centroids per number of neighbors.</li>
+                <li>On mouse click, the preview turns to set mode. That way you may compare classification between 2 different clusterings.</li>
+            </ul>
+        </p>
         <div class="btn-group-lg" role="group" aria-label="...">
             <button type="button" class="btn currentFlag" value="-1" alt="Prostitution Crimes Coordinates">No Clustering</button>
             <button type="button" class="btn" value="0" alt="KNN for K=2">K=2</button>
@@ -38,8 +51,9 @@
     </div>
     <script type="text/javascript" src="js/d3-tip.js"></script>
     <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
-    <script type="text/javascript" src="js/barplot.js"></script>
+    <!-- <script type="text/javascript" src="js/barplot.js"></script> -->
     <script type="text/javascript" src="js/scatterplot.js"></script>
-    <script type="text/javascript" src="js/geodata.js"></script>   
+    <script type="text/javascript" src="js/geodata.js"></script>
+</div>
 </body>
 </html>
