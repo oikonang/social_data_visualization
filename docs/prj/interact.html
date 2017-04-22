@@ -1,0 +1,73 @@
+<!--Reference: https://gist.github.com/xEviL/0c4f628645c6c21c8b3a -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <style>
+        #boroughs {
+            stroke: grey;
+            stroke-width: 2px;
+            fill: steelblue;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <div id="map-canvas"></div>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <!--<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>-->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="L.D3SvgOverlay.min.js"></script>
+
+    <script>
+        var width = 1000,
+            height = 800;
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        var map = L.map("map-canvas", {
+            center: [-73.94000000000000, 40.70000000000000],
+            zoom: 2
+        });
+        var tiles = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+        });
+        tiles.addTo(map);
+
+        var countries = [];
+        var countriesOverlay = L.d3SvgOverlay(function(sel, proj) {
+
+            var upd = sel.selectAll('path').data(countries);
+            upd.enter()
+                .append('path')
+                .attr('d', proj.pathFromGeojson)
+                .attr('stroke', 'black')
+                .attr('fill', function() {
+                    return d3.hsl(Math.random() * 360, 0.9, 0.5)
+                })
+                .attr('fill-opacity', '0.5');
+            upd.attr('stroke-width', 1 / proj.scale);
+        });
+
+        L.control.layers({
+            "Geo Tiles": tiles
+        }, {
+            "Countries": countriesOverlay
+        }).addTo(map);
+
+        d3.json("nyc-boroughs.json", function(error, nyb) {
+
+            console.log(nyb)
+
+            countries = nyb.features;
+            countriesOverlay.addTo(map)
+
+        });
+    </script>
+</body>
+
+</html>
