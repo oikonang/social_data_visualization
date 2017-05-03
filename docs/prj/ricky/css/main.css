@@ -1,0 +1,22 @@
+label.select-label {
+    text-transform: uppercase;
+    padding: 1em 0 1.5em;
+    font-size: 75%;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 300px;
+    text-align: left;
+    margin: 0 auto;
+    color: #c0c6c4;
+}
+
+#treeBarplot {
+    font-family: 'Raleway', Arial, sans-serif;
+    padding: 20px;
+}
+
+.userInputBarplot {
+    color: #800000;
+    font-weight: bold;
+    font-style: italic;
+}
