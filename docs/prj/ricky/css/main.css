@@ -15,8 +15,67 @@ label.select-label {
     padding: 20px;
 }
 
+#treeBarplot svg {
+    padding-left: 50px;
+    padding-bottom: 430px;
+    padding-top: 5px;
+    margin: 10px 10px 10px 10px;
+}
+
 .userInputBarplot {
     color: #800000;
     font-weight: bold;
     font-style: italic;
+}
+
+.bar {
+    fill: lightgreen;
+}
+
+.bar:hover {
+    fill: green;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px !important;
+    font-weight: normal;
+}
+
+.barTitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.barTip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+.barTip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+.barTip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
 }
