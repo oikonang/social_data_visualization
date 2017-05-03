@@ -1,0 +1,7462 @@
+{
+  "REGO PARK": {
+    "February": {
+      "night": {
+        "probabilities": [
+          34,
+          22,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          74,
+          9,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          48,
+          12,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          32,
+          23,
+          21
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          64,
+          9,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "FLOORING/STAIRS"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          49,
+          14,
+          12
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          62,
+          13,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          48,
+          18,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          43,
+          17,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          91,
+          5,
+          2
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          36,
+          21,
+          20
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          54,
+          9,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          52,
+          23,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          37,
+          12,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          15,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          34,
+          33,
+          13
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          53,
+          20,
+          16
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          28,
+          14,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          28,
+          20,
+          17
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          37,
+          29,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          28,
+          14,
+          11
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          42,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          60,
+          20,
+          20
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          31,
+          18,
+          13
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "DOOR/WINDOW",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          40,
+          19,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          69,
+          13,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          79,
+          13,
+          3
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          41,
+          15,
+          10
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          66,
+          9,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          42,
+          15,
+          13
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          36,
+          36,
+          18
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          25,
+          25,
+          12
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          28,
+          26,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          43,
+          14,
+          10
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          46,
+          22,
+          15
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          28,
+          20,
+          16
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          47,
+          29,
+          5
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          42,
+          31,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          38,
+          14,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "FLOORING/STAIRS"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          25,
+          24,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          57,
+          19,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          35,
+          28,
+          21
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          31,
+          12,
+          12
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          39,
+          15,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "FLOORING/STAIRS"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          42,
+          27,
+          10
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          56,
+          17,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          62,
+          12,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          15,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          47,
+          23,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          42,
+          20,
+          15
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          25,
+          22,
+          18
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          44,
+          27,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          24,
+          24,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          26,
+          26,
+          21
+        ],
+        "predictions": [
+          "PLUMBING",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          37,
+          31,
+          10
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          9,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          46,
+          15,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          36,
+          16,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          63,
+          5,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    }
+  },
+  "BREEZY POINT": {
+    "February": {
+      "night": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "APPLIANCE",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          71,
+          14,
+          14
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          41,
+          25,
+          16
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          57,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          20,
+          13,
+          13
+        ],
+        "predictions": [
+          "PLUMBING",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          60,
+          20,
+          20
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          50,
+          33,
+          16
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          37,
+          25,
+          25
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "WATER LEAK",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          57,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          37,
+          25,
+          25
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "WATER LEAK",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          42,
+          35,
+          21
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          7,
+          7
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          46,
+          23,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          40,
+          20
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          30,
+          30,
+          20
+        ],
+        "predictions": [
+          "APPLIANCE",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          33,
+          16
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      }
+    }
+  },
+  "HOWARD BEACH": {
+    "February": {
+      "night": {
+        "probabilities": [
+          26,
+          23,
+          15
+        ],
+        "predictions": [
+          "PLUMBING",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          36,
+          18,
+          18
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          42,
+          28,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          29,
+          25,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          54,
+          23,
+          8
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          23,
+          23,
+          15
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          69,
+          15,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          40,
+          20,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          16,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          33,
+          17,
+          16
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          53,
+          20,
+          6
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          42,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          14,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          28,
+          22,
+          15
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          56,
+          37,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          36,
+          27,
+          18
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          90,
+          10,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          29,
+          16,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "APPLIANCE"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          21,
+          19,
+          17
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          42,
+          28,
+          14
+        ],
+        "predictions": [
+          "PLUMBING",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          38,
+          35,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          21,
+          21,
+          17
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          23,
+          23,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          22,
+          22,
+          17
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          31,
+          18,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          46,
+          30,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          27,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          34,
+          18,
+          18
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          45,
+          36,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          33,
+          33,
+          22
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "APPLIANCE",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          26,
+          25,
+          17
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          60,
+          40,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          35,
+          28,
+          21
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          55,
+          22,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PLUMBING",
+          "FLOORING/STAIRS"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          37,
+          24,
+          10
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          30,
+          20,
+          20
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          20,
+          20,
+          20
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          62,
+          20,
+          4
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          22,
+          22,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          38,
+          20,
+          18
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          14,
+          7
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "APPLIANCE",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          72,
+          18,
+          9
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "FLOORING/STAIRS"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          29,
+          27,
+          17
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          60,
+          20,
+          20
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          70,
+          20,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          40,
+          13,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          35,
+          21,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      }
+    }
+  },
+  "FLORAL PARK": {
+    "February": {
+      "night": {
+        "probabilities": [
+          40,
+          40,
+          20
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          95,
+          1,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          37,
+          12,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          23,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          18,
+          17,
+          16
+        ],
+        "predictions": [
+          "PLUMBING",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          54,
+          24,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "APPLIANCE",
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          29,
+          23,
+          19
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          19,
+          16,
+          16
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          34,
+          15,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          40,
+          20,
+          20
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          33,
+          33,
+          22
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          64,
+          14,
+          7
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          45,
+          22,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          37,
+          12,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          30,
+          21,
+          21
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          72,
+          12,
+          4
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "UNSANITARY CONDITION",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          65,
+          8,
+          6
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          26,
+          25,
+          17
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          85,
+          9,
+          2
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          25,
+          20,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          15,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          92,
+          7,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          91,
+          3,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          43,
+          12,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          29,
+          17,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          16,
+          16
+        ],
+        "predictions": [
+          "PLUMBING",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          72,
+          6,
+          5
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "UNSANITARY CONDITION",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          56,
+          18,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          93,
+          2,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          52,
+          15,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          31,
+          17,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          66,
+          15,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      }
+    }
+  },
+  "WOODSIDE": {
+    "February": {
+      "night": {
+        "probabilities": [
+          61,
+          10,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          69,
+          15,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          53,
+          21,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          15,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          72,
+          10,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          26,
+          25,
+          12
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          68,
+          7,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          11,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          26,
+          23,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          66,
+          9,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          39,
+          13,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          51,
+          23,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          43,
+          24,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          49,
+          21,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          44,
+          16,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          31,
+          30,
+          13
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          31,
+          27,
+          18
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          51,
+          24,
+          7
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          30,
+          15,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          13,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          24,
+          21,
+          12
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          25,
+          25,
+          12
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          16,
+          16
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          43,
+          15,
+          9
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          60,
+          20,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "APPLIANCE"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          60,
+          14,
+          10
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          72,
+          13,
+          4
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          86,
+          5,
+          2
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          57,
+          21,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          62,
+          12,
+          9
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          23,
+          22,
+          22
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          44,
+          13,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          44,
+          15,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          24,
+          24,
+          17
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          21,
+          21,
+          21
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          28,
+          26,
+          15
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          35,
+          17,
+          17
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          28,
+          14,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          26,
+          21,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          30,
+          25,
+          17
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "FLOORING/STAIRS"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          21,
+          16,
+          12
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          35,
+          14,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          26,
+          20,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          28,
+          23,
+          19
+        ],
+        "predictions": [
+          "PLUMBING",
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          37,
+          25,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          59,
+          10,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          77,
+          13,
+          2
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          68,
+          12,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          42,
+          21,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          58,
+          12,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          35,
+          21,
+          17
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          34,
+          29,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          18,
+          18,
+          16
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          31,
+          28,
+          15
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          25,
+          17,
+          17
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "WATER LEAK",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          39,
+          23,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          53,
+          15,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          13,
+          10
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          37,
+          16,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          61,
+          23,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      }
+    }
+  },
+  "BELLEROSE": {
+    "February": {
+      "night": {
+        "probabilities": [
+          60,
+          20,
+          20
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          58,
+          41,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "APPLIANCE",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          66,
+          16,
+          8
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          71,
+          14,
+          14
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          35,
+          30,
+          20
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          38,
+          28,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          33,
+          33,
+          16
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "FLOORING/STAIRS",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          20,
+          13,
+          13
+        ],
+        "predictions": [
+          "PLUMBING",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          60,
+          20,
+          20
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          50,
+          33,
+          16
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          32,
+          19,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          42,
+          35,
+          21
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          7,
+          7
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          30,
+          20,
+          20
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          33,
+          25,
+          8
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          40,
+          20
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          30,
+          30,
+          20
+        ],
+        "predictions": [
+          "APPLIANCE",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          26,
+          19,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "APPLIANCE",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          41,
+          32,
+          22
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          33,
+          16
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      }
+    }
+  },
+  "ELMHURST": {
+    "February": {
+      "night": {
+        "probabilities": [
+          40,
+          17,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          95,
+          1,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          35,
+          25,
+          9
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          40,
+          20,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          61,
+          10,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          30,
+          24,
+          11
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          83,
+          5,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          23,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          18,
+          17,
+          16
+        ],
+        "predictions": [
+          "PLUMBING",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          54,
+          24,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          29,
+          22,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          93,
+          2,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          56,
+          16,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          41,
+          16,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          67,
+          9,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          37,
+          25,
+          10
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          29,
+          23,
+          19
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          19,
+          16,
+          16
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          34,
+          15,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          35,
+          17,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          20,
+          18,
+          17
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          64,
+          14,
+          7
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          26,
+          21,
+          15
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          27,
+          24,
+          13
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          44,
+          22,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          44,
+          21,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          85,
+          5,
+          3
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          45,
+          22,
+          8
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          37,
+          18,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          58,
+          9,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          30,
+          21,
+          21
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          72,
+          12,
+          4
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          52,
+          16,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          44,
+          18,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          65,
+          8,
+          6
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          30,
+          28,
+          9
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          28,
+          24,
+          22
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          44,
+          14,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          41,
+          14,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          33,
+          3
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          45,
+          15,
+          10
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          85,
+          9,
+          2
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          25,
+          20,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          15,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          75,
+          8,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          40,
+          21,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          91,
+          3,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          43,
+          12,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          29,
+          17,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          64,
+          17,
+          4
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          27,
+          24,
+          12
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          72,
+          6,
+          5
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          67,
+          14,
+          7
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          39,
+          21,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          56,
+          18,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          40,
+          18,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          93,
+          2,
+          1
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          52,
+          15,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          31,
+          17,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          66,
+          15,
+          6
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      }
+    }
+  },
+  "CAMBRIA HEIGHTS": {
+    "February": {
+      "night": {
+        "probabilities": [
+          33,
+          27,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          21,
+          21,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          33,
+          16
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          23,
+          23,
+          17
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          44,
+          27,
+          22
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "APPLIANCE",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          16,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          22,
+          22
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "ELECTRIC",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          35,
+          22,
+          22
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          25,
+          16
+        ],
+        "predictions": [
+          "PLUMBING",
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          40,
+          22,
+          18
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          41,
+          25,
+          16
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          25,
+          18
+        ],
+        "predictions": [
+          "PLUMBING",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          28,
+          16,
+          16
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          57,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          20,
+          13,
+          13
+        ],
+        "predictions": [
+          "PLUMBING",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          31,
+          31,
+          11
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          37,
+          25,
+          25
+        ],
+        "predictions": [
+          "FLOORING/STAIRS",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          33,
+          33,
+          16
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          40,
+          20,
+          20
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          25,
+          18,
+          18
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          38,
+          26,
+          11
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          33,
+          22,
+          11
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          57,
+          28,
+          14
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          33,
+          22,
+          11
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          33,
+          30,
+          21
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          7,
+          7
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          27,
+          24,
+          15
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "DOOR/WINDOW",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          60,
+          20,
+          20
+        ],
+        "predictions": [
+          "PLUMBING",
+          "DOOR/WINDOW",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          26,
+          23,
+          19
+        ],
+        "predictions": [
+          "PLUMBING",
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          18,
+          18,
+          13
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          36,
+          28,
+          26
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "APPLIANCE",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          36,
+          18,
+          9
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          66,
+          16,
+          16
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          29,
+          22,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          17,
+          17,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          40,
+          20,
+          20
+        ],
+        "predictions": [
+          "PLUMBING",
+          "WATER LEAK",
+          "FLOORING/STAIRS"
+        ]
+      }
+    }
+  },
+  "GLEN OAKS": {
+    "February": {
+      "night": {
+        "probabilities": [
+          33,
+          33,
+          16
+        ],
+        "predictions": [
+          "APPLIANCE",
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          36,
+          18,
+          18
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "WATER LEAK",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          42,
+          28,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          60,
+          40,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          69,
+          15,
+          7
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          33,
+          17,
+          16
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          53,
+          20,
+          6
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          61,
+          30,
+          7
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          40,
+          40,
+          20
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          21,
+          21,
+          17
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          50,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          28,
+          28,
+          14
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "DOOR/WINDOW"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          25,
+          25
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          30,
+          23,
+          15
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          50,
+          25,
+          15
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          26,
+          25,
+          17
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          60,
+          40,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          35,
+          28,
+          21
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          55,
+          22,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          33,
+          33
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          92,
+          7,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "WATER LEAK"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          50,
+          50,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "FLOORING/STAIRS",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          20,
+          20,
+          20
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          22,
+          22,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          56,
+          18,
+          12
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "GENERAL CONSTRUCTION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "WATER LEAK",
+          "APPLIANCE"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          70,
+          30,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          37,
+          25,
+          25
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "PLUMBING",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          70,
+          20,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      }
+    }
+  },
+  "ARVERNE": {
+    "February": {
+      "night": {
+        "probabilities": [
+          29,
+          29,
+          12
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          56,
+          18,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "APPLIANCE",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          42,
+          14,
+          14
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          23,
+          23,
+          15
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "APPLIANCE"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          27,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "October": {
+      "night": {
+        "probabilities": [
+          36,
+          17,
+          13
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          40,
+          20,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          30,
+          17,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "PAINT/PLASTER"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          35,
+          15,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "FLOORING/STAIRS"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          39,
+          17,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      }
+    },
+    "March": {
+      "night": {
+        "probabilities": [
+          22,
+          21,
+          16
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          23,
+          15,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          40,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          52,
+          17,
+          17
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          34,
+          17,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "PAINT/PLASTER"
+        ]
+      }
+    },
+    "August": {
+      "night": {
+        "probabilities": [
+          32,
+          19,
+          18
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "GENERAL CONSTRUCTION",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          31,
+          24,
+          13
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          35,
+          30,
+          20
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          36,
+          25,
+          9
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          38,
+          28,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "May": {
+      "night": {
+        "probabilities": [
+          32,
+          17,
+          15
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "WATER LEAK",
+          "ELECTRIC",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          66,
+          33,
+          0
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "FLOORING/STAIRS",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          20,
+          13,
+          13
+        ],
+        "predictions": [
+          "PLUMBING",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      }
+    },
+    "January": {
+      "night": {
+        "probabilities": [
+          34,
+          29,
+          12
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          62,
+          11,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          61,
+          15,
+          15
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "APPLIANCE",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          23,
+          20,
+          13
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          83,
+          11,
+          5
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      }
+    },
+    "June": {
+      "night": {
+        "probabilities": [
+          38,
+          15,
+          9
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          36,
+          27,
+          18
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          75,
+          25,
+          0
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          32,
+          19,
+          12
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "ELECTRIC"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          50,
+          30,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "WATER LEAK",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "September": {
+      "night": {
+        "probabilities": [
+          32,
+          27,
+          18
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          75,
+          7,
+          7
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          27,
+          22,
+          22
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "DOOR/WINDOW",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          52,
+          17,
+          11
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PLUMBING",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          42,
+          19,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "PLUMBING"
+        ]
+      }
+    },
+    "April": {
+      "night": {
+        "probabilities": [
+          26,
+          14,
+          13
+        ],
+        "predictions": [
+          "PLUMBING",
+          "GENERAL CONSTRUCTION",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          42,
+          14,
+          14
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          50,
+          33,
+          16
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          22,
+          22
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "FLOORING/STAIRS",
+          "PAINT/PLASTER"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          33,
+          33,
+          25
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "PLUMBING",
+          "UNSANITARY CONDITION"
+        ]
+      }
+    },
+    "December": {
+      "night": {
+        "probabilities": [
+          33,
+          24,
+          21
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          44,
+          22,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          100,
+          0,
+          0
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "WATER LEAK"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          18,
+          14
+        ],
+        "predictions": [
+          "PLUMBING",
+          "UNSANITARY CONDITION",
+          "DOOR/WINDOW"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          37,
+          25,
+          12
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "ELECTRIC"
+        ]
+      }
+    },
+    "July": {
+      "night": {
+        "probabilities": [
+          31,
+          25,
+          14
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "PLUMBING",
+          "ELECTRIC"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          35,
+          28,
+          14
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "PAINT/PLASTER",
+          "HEAT/HOT WATER"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          33,
+          33,
+          16
+        ],
+        "predictions": [
+          "ELECTRIC",
+          "HEAT/HOT WATER",
+          "APPLIANCE"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          26,
+          19,
+          15
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "APPLIANCE",
+          "PLUMBING"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          40,
+          36,
+          10
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION",
+          "WATER LEAK"
+        ]
+      }
+    },
+    "November": {
+      "night": {
+        "probabilities": [
+          31,
+          28,
+          23
+        ],
+        "predictions": [
+          "GENERAL CONSTRUCTION",
+          "ELECTRIC",
+          "PLUMBING"
+        ]
+      },
+      "evening": {
+        "probabilities": [
+          55,
+          33,
+          11
+        ],
+        "predictions": [
+          "HEAT/HOT WATER",
+          "ELECTRIC",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "afternoon": {
+        "probabilities": [
+          40,
+          30,
+          10
+        ],
+        "predictions": [
+          "UNSANITARY CONDITION",
+          "HEAT/HOT WATER",
+          "ELECTRIC"
+        ]
+      },
+      "midday": {
+        "probabilities": [
+          25,
+          22,
+          19
+        ],
+        "predictions": [
+          "DOOR/WINDOW",
+          "HEAT/HOT WATER",
+          "UNSANITARY CONDITION"
+        ]
+      },
+      "morning": {
+        "probabilities": [
+          29,
+          25,
+          20
+        ],
+        "predictions": [
+          "PAINT/PLASTER",
+          "UNSANITARY CONDITION",
+          "PLUMBING"
+        ]
+      }
+    }
+  }
+}
