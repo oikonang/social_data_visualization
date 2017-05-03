@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  #map {
+        width: 1000px;
+        height: 800px;
+      }
+  /*.country_polygon {
+        fill: #31a354;
+        opacity: 0.6;
+  }
+  .country_polygon:hover {
+        opacity: 0.9;
+  }*/
+  
+  /*.d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #aaa;
+        border-radius: 2px;
+        font-family: Arial, sans-serif;
+      }
+  /* Creates a small triangle extender for the tooltip */
+  /*.d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+      }*/
+
+  /* Style northward tooltips differently */
+  /*.d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+      }*/
+  </style>
+<body>
+<div id="map"></div>
+<!-- <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script> -->
+<!-- <script src="http://d3js.org/topojson.v1.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+<!-- <script type="text/javascript" src="d3-tip.js"></script> -->
+<script type="text/javascript">
+  var w = 1000;
+  var h = 800;
+  var colors = ['#FFFF00','#FF00FF']
+
+  //Define projection for the bounding box
+  var projection = d3.geoMercator()
+                     .center([-74.011, 40.676])
+                     .scale(130000)
+                     .translate([w / 2, h / 2])
+                  
+  //Define path generator
+  var path = d3.geoPath()
+               .projection(projection);
+
+  //Create SVG element
+  var svg = d3.select("#map")
+              .append("svg")
+              .attr("height", h)
+              .attr("width", w);
+
+  //Load the json coordinates and print the map
+  d3.json("nyc.geojson", function(json) {
+    
+    svg.selectAll("path")
+        .data(json.features)
+        .enter()
+        .append("path")
+        .attr("d", path)
+        .attr("stroke", "white")
+        .attr("stroke-width", 2)
+        .attr("stroke-opacity", 0.3)
+        .style("fill", "black")
+        .style("opacity", "0.4");
+  });
+</script>
+</body>
+</html>
