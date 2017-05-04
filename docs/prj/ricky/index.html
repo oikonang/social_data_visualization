@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Social Data Analysis and Visualization - Final Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/cs-select.css">
+    <link rel="stylesheet" type="text/css" href="css/cs-skin-rotate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>  
+<body>
+    <div id="treeBarplot">
+        <h1>What complaint should I expect if...</h1>
+        <h2>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></h2>
+        <h2>in... <span id="monthTitle" class="userInputBarplot">(month)</span></h2>
+        <h2>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></h2>
+
+        <div class="col-sm-4" id="districtColumn">
+            <label class="select-label">Choose the NYC District:</label>
+            <select class="cs-select cs-skin-rotate" id="districtSelect">
+                <option value="default" disabled selected>Choose your option</option>
+                <!-- <option value="1">Option 1</option> -->
+            </select>
+        </div>
+
+        <div class="col-sm-4" id="monthColumn">
+            <label class="select-label">Choose the month:</label>
+            <select class="cs-select cs-skin-rotate" id="monthSelect">
+                <option value="default" disabled selected>Choose your option</option>
+                <!-- <option value="1">Option 1</option> -->
+            </select>
+        </div>
+
+        <div class="col-sm-4" id="timeColumn">
+            <label class="select-label">Choose the time of day:</label>
+            <select class="cs-select cs-skin-rotate" id="timeSelect">
+                <option value="default" disabled selected>Choose your option</option>
+                <!-- <option value="1">Option 1</option> -->
+            </select>
+        </div>    
+
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script type="text/javascript" src="js/barplot.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/selectFx.js"></script>
+    <script type="text/javascript" src="js/d3-tip.js"></script>
+    <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+    <!-- <script>
+        (function() {
+            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {    
+                new SelectFx(el);
+            } );
+        })();
+    </script> -->
+</body>
+</html>

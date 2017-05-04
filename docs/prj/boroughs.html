@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    #boroughs {
+        stroke: grey;
+        stroke-width: 2px;
+        fill: steelblue;
+    }
+</style>
+<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
+<body>
+    <script>
+        var width = 1000,
+            height = 800;
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        d3.json("nyc-districts.json", function(error, nyb) {
+            //d3.json("nyc-boroughs.json", function(error, nyb) {
+
+            console.log(nyb)
+
+            var projection = d3.geoMercator()
+                .center([-73.94, 40.70])
+                .scale(50000)
+                .translate([(width) / 2, (height) / 2]);
+
+            var path = d3.geoPath()
+                .projection(projection);
+
+            var g = svg.append("g");
+
+            g.append("g")
+                .attr("id", "boroughs")
+                .selectAll(".state")
+                .data(nyb.features)
+                .enter().append("path")
+                .attr("class", function(d) {
+                    return d.properties.name;
+                })
+                .attr("d", path);
+
+        });
+    </script>
+</body>
+
+</html>
