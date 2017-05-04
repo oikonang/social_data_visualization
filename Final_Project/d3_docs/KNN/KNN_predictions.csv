@@ -1,4 +1,4 @@
-lat,lon,5_neighs,10_neighs,30_neighs
+lat,lon,neighs_5,neighs_10,neighs_30
 40.7058442384,-73.7625081146,Noise - Vehicle,Noise - Residential,Noise - Vehicle
 40.5071006637,-73.8818848675,Noise - Commercial,Noise - Commercial,Noise - Commercial
 40.7720920966,-74.1853007812,Noise - Vehicle,Noise - Residential,Noise - Residential
