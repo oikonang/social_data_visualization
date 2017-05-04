@@ -220,7 +220,7 @@ function populateDropdowns(filename) {
 var width = 800;
 var height = 400;
 var barPadding = 80;
-var treePredictionsFile = "data/decision_tree_predictions.json";
+var treePredictionsFile = "d3_data_files/decision_tree_predictions.json";
 var initBarplot = false;
 
 //Invoke functions
