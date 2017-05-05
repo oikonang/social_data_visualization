@@ -25,7 +25,7 @@
 </style>
 
 <body>
-    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <script>
         var width = 960,
             height = 500,
@@ -51,7 +51,7 @@
 
         var g = svg.append("g");
 
-        d3.json("nyc-boroughs.json", function(error, nyb) {
+        d3.json("nyc-districts.json", function(error, nyb) {
             if (error) throw error;
 
             console.log(nyb);
