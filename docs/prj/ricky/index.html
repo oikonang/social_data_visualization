@@ -9,10 +9,15 @@
     <link rel="stylesheet" type="text/css" href="css/cs-skin-rotate.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>  
 <body>
+    <!-- START DECISION TREE PREDICTION BARPLOT -->
     <div id="treeBarplot">
         <h1>What complaint should I expect if...</h1>
         <h2>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></h2>
@@ -44,13 +49,25 @@
         </div>    
 
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
-    <script type="text/javascript" src="js/barplot.js"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
-    <script type="text/javascript" src="js/selectFx.js"></script>
-    <script type="text/javascript" src="js/d3-tip.js"></script>
-    <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+
+    <!-- START CLUSTERING -->
+    <div id="clustering">
+        <h1></h1>
+        <a class="randomClusteringButton"></a>
+        <p>
+          <label class="sliderInfo" for="numClusters">Number of clusters: </label>
+          <input class="sliderInfo" type="text" id="numClusters" readonly style="border:0; color:#f6931f; font-weight:bold;">
+      </p>
+      <div id="slider"></div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+  <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+  <script type="text/javascript" src="js/barplot.js"></script>
+  <script type="text/javascript" src="js/clustering.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+  <script type="text/javascript" src="js/selectFx.js"></script>
+  <script type="text/javascript" src="js/d3-tip.js"></script>
     <!-- <script>
         (function() {
             [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {    
