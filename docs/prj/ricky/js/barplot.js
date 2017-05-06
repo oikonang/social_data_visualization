@@ -1,4 +1,11 @@
-function loadData(district,month,time) {
+//Global variables
+var width_1 = 800;
+var height_1 = 400;
+var barPadding_1 = 80;
+var treePredictionsFile = "d3_data_files/decision_tree_predictions.json";
+var initBarplot = false;
+
+function loadBarplotData(district,month,time) {
 	initBarplot = true;
 	d3.json(treePredictionsFile, function(data) {
 
@@ -8,12 +15,12 @@ function loadData(district,month,time) {
 		//Define scales
 		var xScale = d3.scaleBand()
 		.domain(d3.range(complaints.length))
-		.range([0,width])
+		.range([0,width_1])
 		.padding(0.1);
 
 		var yScale = d3.scaleLinear()
 		.domain([0,100]) //since they will be percentages, it's fixed 0%-100%
-		.range([height,0]);
+		.range([height_1,0]);
 
 		//Get reference to SVG element in DOM
 		var svg = d3.select("#treeBarplot").select("svg");
@@ -34,11 +41,11 @@ function loadData(district,month,time) {
 		.attrs({
 			x: function(d,i) {return xScale(i);},
 			y: function(d) {return yScale(+d);},
-			height: function(d) {return height-yScale(+d);}
+			height: function(d) {return height_1-yScale(+d);}
 		})
 		.classed("bar",true)
 		.styles({
-			width:  width/probabilities.length-barPadding
+			width:  width_1/probabilities.length-barPadding_1
 		});
 
 		//Draw bar names
@@ -50,7 +57,7 @@ function loadData(district,month,time) {
 			return d;
 		})
 		.attrs({
-			x: function(d,i) {return xScale(i)+ (width / complaints.length - barPadding) / 2},
+			x: function(d,i) {return xScale(i)+ (width_1 / complaints.length - barPadding_1) / 2},
 			y: function(d,i) {return yScale(+probabilities[i])+30},
 			fill: "black"
 		})
@@ -78,7 +85,7 @@ function loadData(district,month,time) {
 		.attrs({
 			x: function(d,i) { return xScale(i); },
 			y: function(d) { return  yScale(+d); },
-			height: function(d,i) { return height - yScale(+d);}
+			height_1: function(d,i) { return height_1 - yScale(+d);}
 		})
 		.on('mouseover', tip.show)
 		.on('mouseout', tip.hide);*/
@@ -86,7 +93,7 @@ function loadData(district,month,time) {
 		//Add X axis
 		svg.append("g")
 		.classed("axis",true)
-		.attr("transform", "translate(0," + height + ")")
+		.attr("transform", "translate(0," + height_1 + ")")
 		.call(xAxis);
 
         //Add Y axis
@@ -99,7 +106,7 @@ function loadData(district,month,time) {
         svg.append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", -50)
-        .attr("x",0 - (height / 2))
+        .attr("x",0 - (height_1 / 2))
         .attr("dy", "1em")
         .attr("font-family", "sans-serif")
         .style("text-anchor", "middle")
@@ -107,23 +114,23 @@ function loadData(district,month,time) {
     });
 }
 
-function updateData(district,month,time) {
+function updateBarplotData(district,month,time) {
 	d3.json(treePredictionsFile,function(data) {
 		var probabilities = data[district][month][time]["probabilities"]; //array of probabilities, len=3
 		var complaints = data[district][month][time]["predictions"]; //array of complaint types, len=3
 
 		var yScale = d3.scaleLinear()
 		.domain([0,100]) //since they will be percentages, it's fixed 0%-100%
-		.range([height,0]);
+		.range([height_1,0]);
 
-		//Update bars height
+		//Update bars height_1
 		d3.select("#treeBarplot").select("svg").selectAll(".bar")
 		.data(probabilities)
 		.transition()
 		.duration(1000)
 		.attrs({
 			y: function(d) {return yScale(+d);},
-			height: function(d) {return height-yScale(+d);}
+			height: function(d) {return height_1-yScale(+d);}
 		});
 
 		//Update bar labels
@@ -143,8 +150,8 @@ function createBarplot() {
     //Create SVG element
     var svg = d3.select("#treeBarplot")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", width_1)
+    .attr("height", height_1);
 }
 
 function drawBarplot() {
@@ -157,9 +164,9 @@ function drawBarplot() {
 
 	//Else, (re)-draw the plot
 	if (!initBarplot)
-		loadData(district,month,time);
+		loadBarplotData(district,month,time);
 	else {
-		updateData(district,month,time);
+		updateBarplotData(district,month,time);
 	}
 }
 
@@ -215,13 +222,6 @@ function populateDropdowns(filename) {
 		}
 	});
 }
-
-//Global variables
-var width = 800;
-var height = 400;
-var barPadding = 80;
-var treePredictionsFile = "d3_data_files/decision_tree_predictions.json";
-var initBarplot = false;
 
 //Invoke functions
 createBarplot();
