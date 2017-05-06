@@ -111,7 +111,7 @@ div.tooltip {
     font-weight: bold;
 }
 
-.randomClusteringButton {
+.fancy_btn {
     display: inline-block;
     margin: 20px;
     
@@ -129,7 +129,7 @@ div.tooltip {
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
 } 
 
-.randomClusteringButton span {
+.fancy_btn span {
     background-color: #E8E8E8;
     
     background-image: 
@@ -194,13 +194,13 @@ div.tooltip {
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
 
-.randomClusteringButton span:hover {
+.fancy_btn span:hover {
     color: #AEBF3B;
     text-shadow: 0px -1px #97A63A;
     cursor: pointer;
 }
 
-.randomClusteringButton:active {
+.fancy_btn:active {
     -webkit-box-shadow: 
     0px 3px rgba(128,128,128,1),
     0px 4px rgba(118,118,118,1),
@@ -211,8 +211,8 @@ div.tooltip {
     0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
 }
 
-.randomClusteringButton:active span{
-    -webkit-transform: translate(0, 5px); /* depth of randomClusteringButton press */
+.fancy_btn:active span{
+    -webkit-transform: translate(0, 5px); /* depth of fancy_btn press */
 }
 
 #clustering #slider {
