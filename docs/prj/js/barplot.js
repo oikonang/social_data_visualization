@@ -16,7 +16,7 @@ function loadBarplotData(district,month,time) {
 		var xScale = d3.scaleBand()
 		.domain(d3.range(complaints.length))
 		.range([0,width_1])
-		.padding(0.1);
+		.padding(0.23);
 
 		var yScale = d3.scaleLinear()
 		.domain([0,100]) //since they will be percentages, it's fixed 0%-100%
@@ -27,7 +27,8 @@ function loadBarplotData(district,month,time) {
 
 		//Define X axis
 		var xAxis = d3.axisBottom()
-		.scale(xScale);
+		.scale(xScale)
+		.tickFormat("");
 
         //Define Y axis
         var yAxis = d3.axisLeft()

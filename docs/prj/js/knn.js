@@ -10,7 +10,7 @@ function createKNNMap(){
     //Define projection for the bounding box
     var projection = d3.geoMercator()
     .center([-73.94, 40.70])
-    .scale(50000)
+    .scale(75000)
     .translate([width / 2, height / 2])
 
     //Define path generator
@@ -30,7 +30,7 @@ function createKNNMap(){
     .attr("width", width);
 
     //Load the json coordinates and print the map
-    d3.json("nyc.geojson", function(json) {
+    d3.json("d3_data_files/nyc.geojson", function(json) {
       svg.selectAll("path")
       .data(json.features)
       .enter()
@@ -39,7 +39,7 @@ function createKNNMap(){
       .attr("id", "neighborhood");
 
     //Load in csv and print the coordinates on the map 
-    d3.csv("KNN_predictions_2.csv", function(data) {
+    d3.csv("d3_data_files/KNN_predictions_2.csv", function(data) {
       svg.selectAll(".points")
       .data(data)
       .enter()
@@ -55,16 +55,16 @@ function createKNNMap(){
         .duration(200)    
         .style("opacity", .9);    
 
-        div.html("Number of Nearest Neighbors:" + "<strong>" + title_3 + "</strong>" + "<br/>" + 
-         "KNN Prediction Score:" + "<strong>" + knnScores[buttonFlag] + "</strong>" + "<br/>" +
-         "Predicted Noise Complaint:" + "<strong>" + d[neighNumber[buttonFlag]] + "</strong>")  
-        .style("left", (d3.event.pageX) + "px")   
-        .style("top", (d3.event.pageY - 28) + "px");
+        div.html("Number of Nearest Neighbors: " + "<strong>" + title_3 + "</strong>" + "<br/>" + 
+         "KNN Prediction Score: " + "<strong>" + knnScores[buttonFlag] + "</strong>" + "<br/>" +
+         "Predicted Noise Complaint: " + "<strong>" + d[neighNumber[buttonFlag]] + "</strong>")  
+        .style("left", (d3.mouse(this)[0]) + "px")   
+        .style("top", (d3.mouse(this)[1] + 930) + "px");  
       })          
       .on("mouseout", function(d) {   
         div.transition()    
         .duration(500)    
-        .style("opacity", 0); 
+        .style("opacity", 0);
       });;
 
       //Setting onMouseClick event handler for buttons, set current clustering

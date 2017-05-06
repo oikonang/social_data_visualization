@@ -2,322 +2,339 @@
 <html class="no-js">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NYC 311 Analysis</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NYC 311 Analysis</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="all,follow">
 
-    <!-- Bootstrap and Font Awesome css-->
-    <!-- we use cdn but you can also include local files located in css directory-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<!-- Bootstrap and Font Awesome css-->
+	<!-- we use cdn but you can also include local files located in css directory-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 
-    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/cs-select.css">
-    <link rel="stylesheet" type="text/css" href="css/cs-skin-rotate.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Google fonts - Montserrat for headings, Cardo for copy-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cs-select.css">
+	<link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- jQuery Stylesheets for UI elements (like slider) -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<!-- jQuery Stylesheets for UI elements (like slider) -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
 
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- ekko lightbox-->
-    <link rel="stylesheet" href="css/ekko-lightbox.css">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-    <!-- Tweaks for older IEs-->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-    </head>
+	<!-- theme stylesheet-->
+	<link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+	<!-- ekko lightbox-->
+	<link rel="stylesheet" href="css/ekko-lightbox.css">
+	<!-- Custom stylesheet - for your changes-->
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="favicon.png">
+	<!-- Tweaks for older IEs-->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+	</head>
 
-    <body data-spy="scroll" data-target="#navigation" data-offset="120">
-        <!-- intro-->
-        <section id="top" style="background-image: url('img/wetglass.jpg');" class="intro">
-            <div class="overlay"></div>
-            <div class="content">
-                <div class="container clearfix">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-12">
-                            <p class="italic">A brief analysis of...</p>
-                            <h1>311 Service Requests in New York City</h1>
-                            <p class="italic" align="right">Final project of the course Social Data Analysis and Visualization.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- intro end-->
+	<body data-spy="scroll" data-target="#navigation" data-offset="120">
+		<!-- intro-->
+		<section id="top" style="background-image: url('img/wetglass.jpg');" class="intro">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="container clearfix">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-12">
+							<p class="italic">A brief analysis of...</p>
+							<h1>311 Service Requests in New York City</h1>
+							<p class="italic" align="right">Final project of the course Social Data Analysis and Visualization.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- intro end-->
 
-        <!-- navbar-->
-        <header class="header">
-            <div class="sticky-wrapper">
-                <div role="navigation" class="navbar navbar-default">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                            <!--<a href="#intro" class="navbar-brand scroll-to"><img src="img/logo.png" alt=""></a>-->
-                            <a href="#top" class="scroll-to nav navbar-nav navbar-text navbar-left">Top</a>
-                        </div>
-                        <div id="navigation" class="collapse navbar-collapse navbar-right">
-                            <ul class="nav navbar-nav">
-                                <!--<li class="active"><a href="#intro">Home</a></li>-->
-                                <li class="active"><a href="#data">Data</a></li>
-                                <li><a href="#noise">Noise</a></li>
-                                <li><a href="#house">House</a></li>
-                                <li><a href="#text">Time</a></li>
-                                <!--<li><a href="#contact">Contact</a></li>-->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- /.navbar-->
-        <!-- data-->
-        <section id="data" class="text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="heading">The Data</h2>
-                        <!--<p class="lead">All good projects start with a good dataset.</p>-->
-                        <p>In the research phase of our project, our attention was caught by one dataset in particular: <a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9"><i>311 Service Request in NYC from 2010 to Present.</i></a></p>
-                        <p>311 is a special telephone number that people can call to access non-emergency government services, a sort of 911 without the life-and-death factor. Clicking the image on the right you can see some examples.</p>
-                        <p>Originally implemented with a call center, it has evolved over the years with technology: you can now submit a request via <a href="http://www1.nyc.gov/311/index.page"><i>website</i></a> or mobile app in a few seconds. You can also
-                            follow the status of the request until it is closed.</p>
-                        </div>
-                        <div class="col-md-5 col-md-offset-1">
-                            <div class="box">
-                                <a href="img/idea.jpg" title="" data-toggle="lightbox" data-title="" data-footer="© Wired"><img src="img/idea.jpg" alt="" class="img-responsive"></a>
-                            </div>
-                            <!--<p align="right"><img src="img/idea.jpg" alt="" class="img-responsive"><a href="https://www.wired.com/2010/11/ff_311_new_york/">© Wired</a></p>-->
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4 class="heading">Explore</h4>
-                        <div class="col-md-13">
-                            <p>We started by looking at the most frequent complaints and their locations. Below you can explore the data by yourself: just click on a neighborood of NYC to get started.</p>
-                            (Insert visualization script)
-                            <!--<script type="text/javascript" src="js/explore.js"></script>-->
-                        </div>
-                    </div>
-                </div>
+		<!-- navbar-->
+		<header class="header">
+			<div class="sticky-wrapper">
+				<div role="navigation" class="navbar navbar-default">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-btn btn-sm navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+							<!--<a href="#intro" class="navbar-brand scroll-to"><img src="img/logo.png" alt=""></a>-->
+							<a href="#top" class="scroll-to nav navbar-nav navbar-text navbar-left">Top</a>
+						</div>
+						<div id="navigation" class="collapse navbar-collapse navbar-right">
+							<ul class="nav navbar-nav">
+								<!--<li class="active"><a href="#intro">Home</a></li>-->
+								<li class="active"><a href="#data">Data</a></li>
+								<li><a href="#noise">Noise</a></li>
+								<li><a href="#house">House</a></li>
+								<li><a href="#text">Time</a></li>
+								<!--<li><a href="#contact">Contact</a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /.navbar-->
+		<!-- data-->
+		<section id="data" class="text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="heading">The Data</h2>
+						<!--<p class="lead">All good projects start with a good dataset.</p>-->
+						<p>In the research phase of our project, our attention was caught by one dataset in particular: <a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9"><i>311 Service Request in NYC from 2010 to Present.</i></a></p>
+						<p>311 is a special telephone number that people can call to access non-emergency government services, a sort of 911 without the life-and-death factor. Clicking the image on the right you can see some examples.</p>
+						<p>Originally implemented with a call center, it has evolved over the years with technology: you can now submit a request via <a href="http://www1.nyc.gov/311/index.page"><i>website</i></a> or mobile app in a few seconds. You can also
+							follow the status of the request until it is closed.</p>
+						</div>
+						<div class="col-md-5 col-md-offset-1">
+							<div class="box">
+								<a href="img/idea.jpg" title="" data-toggle="lightbox" data-title="" data-footer="© Wired"><img src="img/idea.jpg" alt="" class="img-responsive"></a>
+							</div>
+							<!--<p align="right"><img src="img/idea.jpg" alt="" class="img-responsive"><a href="https://www.wired.com/2010/11/ff_311_new_york/">© Wired</a></p>-->
+						</div>
+					</div>
+					<div class="row">
+						<h4 class="heading">Explore</h4>
+						<div class="col-md-13">
+							<p>We started by looking at the most frequent complaints and their locations. Below you can explore the data by yourself: just click on a neighborood of NYC to get started.</p>
+							(Insert visualization script)
+							<!--<script type="text/javascript" src="js/explore.js"></script>-->
+						</div>
+					</div>
+				</div>
 
-            </section>
-            <!-- about end-->
-            <!-- Noise-->
-            <section id="noise" style="background-color: #eee">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="heading">Noise Complaints</h2>
-                            <div class="row">
-                                <p>One of the most interesting type of 311 Requests are Noise complaints. </p>
-                                <p>
-                                    The 5 most frequent categories are:
-                                    <ul>
-                                        <li>Residential</li>
-                                        <li>Street/Sidewalk</li>
-                                        <li>Commercial</li>
-                                        <li>Vehicle</li>
-                                        <li>Park</li>
-                                    </ul>
-                                    (Instogram?)
-                                </p>
-                                <h4 class="heading">Time</h4>
-                                <p> We first performed a time analysis: we have investigated how noise complaints are distributed along the day. In particular, we were looking for a correlation between the type of Noise and the time of the day. </p>
-                                (Insert instograms)
-                                <p> What we have found out is that actually all five categories have the same distribution. </p>
+			</section>
+			<!-- about end-->
+			<!-- Noise-->
+			<section id="noise" style="background-color: #eee">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="heading">Noise Complaints</h2>
+							<div class="row">
+								<p>One of the most interesting type of 311 Requests are Noise complaints. </p>
+								<p>
+									The 5 most frequent categories are:
+									<ul>
+										<li>Residential</li>
+										<li>Street/Sidewalk</li>
+										<li>Commercial</li>
+										<li>Vehicle</li>
+										<li>Park</li>
+									</ul>
+									(Instogram?)
+								</p>
+								<h4 class="heading">Time</h4>
+								<p> We first performed a time analysis: we have investigated how noise complaints are distributed along the day. In particular, we were looking for a correlation between the type of Noise and the time of the day. </p>
+								(Insert instograms)
+								<p> What we have found out is that actually all five categories have the same distribution. </p>
 
-                                <h4 class="heading">Geo</h4>
-                                <p> We then focused on geographic locations. </p>
-                        <!--<div class="col-sm-4">
-                            <div class="box">
-                                <div class="icon"><i class="fa fa-desktop"></i></div>
-                                <h4>Webdesign</h4>
-                                <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="box">
-                                <div class="icon"><i class="fa fa-print"></i></div>
-                                <h4>Print</h4>
-                                <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="box">
-                                <div class="icon"><i class="fa fa-globe"></i></div>
-                                <h4>SEO and SEM</h4>
-                                <p>Am terminated it excellence invitation projection as. She graceful shy. </p>
-                            </div>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Noise end-->
+								<h4 class="heading">Geo</h4>
+								<p> We then focused on geographic locations. </p>
 
-    <!-- Portfolio / gallery-->
-    <section id="house" class="text">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-8">
-                            <h2 class="heading">House Complaints</h2>
-                            <p>Put your portfolio or gallery images here for example. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without
-                                farther she exposed saw man led. Along on happy could cease green oh. </p>
-                            </div>
-                            <!-- D3 VISUALIZATIONS FOR HOUSE COMPLAINTS -->
-                            <div class="col-md-12">
-                                <!-- START DECISION TREE PREDICTION BARPLOT -->
-                                <div id="treeBarplot">
-                                    <h2>What complaint should I expect if...</h2>
-                                    <h3>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></h3>
-                                    <h3>in... <span id="monthTitle" class="userInputBarplot">(month)</span></h3>
-                                    <h3>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></h3>
+								<div class="col-md-12">
+									<!-- START OF ZOOM MAP -->
+									<div id="map_4"></div>
+									<hr class="separator" />
+									<!-- END OF ZOOM MAP-->
 
-                                    <div class="col-sm-4" id="districtColumn">
-                                        <label class="select-label">Choose the NYC District:</label>
-                                        <select class="cs-select cs-skin-rotate" id="districtSelect">
-                                            <option value="default" disabled selected>Choose your option</option>
-                                        </select>
-                                    </div>
+									<!-- START OF KNN MAP-->
+									<div class="btn-group-lg" role="group" aria-label="...">
+										<a class="fancy_btn currentFlag" value="0" alt="5"><span>K=5</span></a>
+										<a class="fancy_btn" value="1" alt="10"><span>K=10</span></a>
+										<a class="fancy_btn" value="2" alt="30"><span>K=30</span></a>
+									</div>
+									<div id="map_3"></div>
+									<!-- END OF KNN MAP-->
+								</div>
+						<!--<div class="col-sm-4">
+							<div class="box">
+								<div class="icon"><i class="fa fa-desktop"></i></div>
+								<h4>Webdesign</h4>
+								<p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="box">
+								<div class="icon"><i class="fa fa-print"></i></div>
+								<h4>Print</h4>
+								<p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="box">
+								<div class="icon"><i class="fa fa-globe"></i></div>
+								<h4>SEO and SEM</h4>
+								<p>Am terminated it excellence invitation projection as. She graceful shy. </p>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Noise end-->
 
-                                    <div class="col-sm-4" id="monthColumn">
-                                        <label class="select-label">Choose the month:</label>
-                                        <select class="cs-select cs-skin-rotate" id="monthSelect">
-                                            <option value="default" disabled selected>Choose your option</option>
-                                        </select>
-                                    </div>
+	<!-- Portfolio / gallery-->
+	<section id="house" class="text">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-8">
+					<h2 class="heading">House Complaints</h2>
+					<p>Put your portfolio or gallery images here for example. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without
+						farther she exposed saw man led. Along on happy could cease green oh.
+					</p>
+				</div>
+			</div>
+			<!-- D3 VISUALIZATIONS FOR HOUSE COMPLAINTS -->
+			<div class="col-md-12">
+				<!-- START DECISION TREE PREDICTION BARPLOT -->
+				<div id="treeBarplot">
+					<h2>What complaint should I expect if...</h2>
+					<h3>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></h3>
+					<h3>in... <span id="monthTitle" class="userInputBarplot">(month)</span></h3>
+					<h3>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></h3>
 
-                                    <div class="col-sm-4" id="timeColumn">
-                                        <label class="select-label">Choose the time of day:</label>
-                                        <select class="cs-select cs-skin-rotate" id="timeSelect">
-                                            <option value="default" disabled selected>Choose your option</option>
-                                        </select>
-                                    </div>    
+					<div class="col-sm-4" id="districtColumn">
+						<label class="select-label">Choose the NYC District:</label>
+						<select class="cs-select cs-skin-elastic" id="districtSelect">
+							<option value="default" disabled selected>Choose your option</option>
+						</select>
+					</div>
 
-                                </div>
-                                <!-- END OF DECISION TREE BARPLOT -->
+					<div class="col-sm-4" id="monthColumn">
+						<label class="select-label">Choose the month:</label>
+						<select class="cs-select cs-skin-elastic" id="monthSelect">
+							<option value="default" disabled selected>Choose your option</option>
+						</select>
+					</div>
 
-                                <div class="col-md-12">
-                                    <!-- START CLUSTERING -->
-                                    <div id="clustering">
-                                        <h1></h1>
-                                        <a class="fancy_btn"></a>
-                                        <p>
-                                          <label class="sliderInfo" for="numClusters">Number of clusters: </label>
-                                          <input class="sliderInfo" type="text" id="numClusters" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                      </p>
-                                      <div id="slider"></div>
-                                  </div>
-                                  <!-- END CLUSTERING -->
-                              </div>
+					<div class="col-sm-4" id="timeColumn">
+						<label class="select-label">Choose the time of day:</label>
+						<select class="cs-select cs-skin-elastic" id="timeSelect">
+							<option value="default" disabled selected>Choose your option</option>
+						</select>
+					</div>    
+				</div>
+			</div>
+			<!-- END OF DECISION TREE BARPLOT -->
+			<hr class="separator" />
 
-                          </div>
-                          <!-- END OF D3 VISUALIZATIONS FOR HOUSE COMPLAINTS -->
+			<div class="col-md-12">
+				<!-- START CLUSTERING -->
+				<div id="clustering">
+					<h1></h1>
+					<a class="fancy_btn"></a>
+					<p>
+						<label class="sliderInfo" for="numClusters">Number of clusters: </label>
+						<input class="sliderInfo" type="text" id="numClusters" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					</p>
+					<div id="slider"></div>
+				</div>
+			</div>
+			<!-- END CLUSTERING -->
 
-                      </div>
-                    <!--<div class="row">
-                        <div class="col-sm-4">
-                            <div class="box">
-                                <a href="img/portfolio-1.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio / gallery end-->
-    <!-- text page-->
-    <section id="text" style="background-color: #333;" class="text-page section-inverse">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="heading">Time</h2>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could
-                                cease green oh. </p>
-                                <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to
-                                    being other. </p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points.
-                                        Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                                        <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug
-                                            do of till on easy. Form not calm new fail. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- text page end-->
-                    <footer style="background-color: #111;" class="section-inverse">
-                        <div class="container">
-                            <div class="row copyright">
-                                <div class="col-md-6">
-                                    <p>&copy;2015 Your name/company goes here</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="credit">Template by <a href="https://bootstrapious.com/tutorials">Bootstrapious</a></p>
-                                    <!-- Please do not remove the backlink to us unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- Javascript files-->
-                    <!-- jQuery and UI-->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-                    <!-- D3 -->
-                    <script src="https://d3js.org/d3.v4.min.js"></script>
-                    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
-                    <script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
 
-                    <script>
-                        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
-                    </script>
+			<!-- END OF D3 VISUALIZATIONS FOR HOUSE COMPLAINTS -->
 
-                    <!-- jQuery Cookie - For Demo Purpose-->
-                    <script src="js/jquery.cookie.js"></script>
+		</div>
+					<!--<div class="row">
+						<div class="col-sm-4">
+							<div class="box">
+								<a href="img/portfolio-1.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a>
+							</div>
+						</div>
+					</div>-->
+	</section>
+				<!-- Portfolio / gallery end-->
+				<!-- text page-->
+				<section id="text" style="background-color: #333;" class="text-page section-inverse">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="heading">Time</h2>
+								<div class="row">
+									<div class="col-sm-6">
+										<p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could
+											cease green oh. </p>
+											<p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to
+												being other. </p>
+											</div>
+											<div class="col-sm-6">
+												<p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points.
+													Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
+													<p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug
+														do of till on easy. Form not calm new fail. </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- text page end-->
+								<footer style="background-color: #111;" class="section-inverse">
+									<div class="container">
+										<div class="row copyright">
+											<div class="col-md-6">
+												<p>&copy;2015 Your name/company goes here</p>
+											</div>
+											<div class="col-md-6">
+												<p class="credit">Template by <a href="https://bootstrapious.com/tutorials">Bootstrapious</a></p>
+												<!-- Please do not remove the backlink to us unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
+											</div>
+										</div>
+									</div>
+								</footer>
+								<!-- Javascript files-->
+								<!-- jQuery and UI-->
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+								<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-                    <!-- Bootstrap CDN-->
-                    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+								<!-- D3 -->
+								<script src="https://d3js.org/d3.v4.min.js"></script>
+								<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+								<script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
 
-                    <!-- Lightbox-->
-                    <script src="js/ekko-lightbox.js"></script>
+								<script>
+									window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+								</script>
 
-                    <!-- Sticky + Scroll To scripts for navbar-->
-                    <script src="js/jquery.sticky.js"></script>
-                    <script src="js/jquery.scrollTo.min.js"></script>
+								<!-- jQuery Cookie - For Demo Purpose-->
+								<script src="js/jquery.cookie.js"></script>
 
-                    <!-- main script-->
-                    <script src="js/front.js"></script>
+								<!-- Bootstrap CDN-->
+								<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-                    <!-- Main Javascript files for D3 visualizations and custom elements (not template!) -->
-                    <script type="text/javascript" src="js/classie.js"></script>
-                    <script type="text/javascript" src="js/selectFx.js"></script>
-                    <script type="text/javascript" src="js/d3-tip.js"></script>
-                    <script type="text/javascript" src="js/barplot.js"></script>
-                    <script type="text/javascript" src="js/clustering.js"></script>
-                </body>
+								<!-- Lightbox-->
+								<script src="js/ekko-lightbox.js"></script>
 
-                </html>
+								<!-- Sticky + Scroll To scripts for navbar-->
+								<script src="js/jquery.sticky.js"></script>
+								<script src="js/jquery.scrollTo.min.js"></script>
+
+								<!-- main script-->
+								<script src="js/front.js"></script>
+
+								<!-- Main Javascript files for D3 visualizations and custom elements (not template!) -->
+								<script type="text/javascript" src="js/classie.js"></script>
+								<script type="text/javascript" src="js/selectFx.js"></script>
+								<script type="text/javascript" src="js/d3-tip.js"></script>
+								<script type="text/javascript" src="js/barplot.js"></script>
+								<script type="text/javascript" src="js/clustering.js"></script>
+								<script type="text/javascript" src="js/boroughs-zoom.js"></script>
+								<script type="text/javascript" src="js/knn.js"></script> 
+							</body>
+
+							</html>

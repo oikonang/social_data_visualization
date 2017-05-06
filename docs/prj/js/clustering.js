@@ -104,13 +104,13 @@ function toggleClusteringSlider() {
     $("#slider").fadeTo("slow",fadingValue);
     $(".sliderInfo").fadeTo("slow",fadingValue);
     if(fadingValue==1) {
-        $(".fancy_btn").html("<span>Remove Clustering</span>");
+        $("#clustering").find(".fancy_btn").html("<span>Remove Clustering</span>");
         var k = $( "#slider" ).slider( "value" );
         clusterize(k);
         loadCentroids(k);
     }
     else {
-        $(".fancy_btn").html("<span>Activate Clustering</span>");
+        $("#clustering").find(".fancy_btn").html("<span>Activate Clustering</span>");
         d3.selectAll(".points")
         .transition()
         .duration(500)
@@ -179,5 +179,5 @@ function removeCentroids() {
 
 loadNewYorkMap(); //It will invoke, nestedly, loadDefaultPoints() and loadSlider()
 toggleClusteringSlider();
-$(".fancy_btn").click(toggleClusteringSlider);
+$("#clustering").find(".fancy_btn").click(toggleClusteringSlider);
 $("#clustering").find("h1").html(defaultClusteringTitle);
