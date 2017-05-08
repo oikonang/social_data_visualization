@@ -249,9 +249,9 @@ label.select-label {
     pointer-events: none;
 }
 div.tooltip { 
-    position: absolute;    
+    position: fixed;    
     text-align: center;     
-    width: auto;          
+    width: auto;
     height: auto;         
     padding: 2px;       
     font: 12px sans-serif;    

@@ -58,8 +58,8 @@ function createKNNMap(){
         div.html("Number of Nearest Neighbors: " + "<strong>" + title_3 + "</strong>" + "<br/>" + 
          "KNN Prediction Score: " + "<strong>" + knnScores[buttonFlag] + "</strong>" + "<br/>" +
          "Predicted Noise Complaint: " + "<strong>" + d[neighNumber[buttonFlag]] + "</strong>")  
-        .style("left", (d3.mouse(this)[0]) + "px")   
-        .style("top", (d3.mouse(this)[1] + 930) + "px");  
+        .style("left", (d3.mouse(this)[0] + 20) + "px")   
+        .style("top", (d3.mouse(this)[1] + 20) + "px");  
       })          
       .on("mouseout", function(d) {   
         div.transition()    
