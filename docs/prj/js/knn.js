@@ -5,6 +5,8 @@ var buttonFlag = $(".currentFlag").attr("value");
 var title_3 = $(".currentFlag").attr("alt");
 var neighNumber = ["neighs_5","neighs_10","neighs_30"];
 var knnScores = ["61.60%", "53.22%", "44.32%"];
+var knnClasses = ['Commercial', 'Park', 'Residential', 'Street/Sidewalk', 'Vehicle'];
+var knnColors = ["red","blue","yellow","green","orange"];
 
 function createKNNMap(){
     //Define projection for the bounding box
@@ -48,12 +50,14 @@ function createKNNMap(){
       .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
       .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
       .attr("r", 6)
-      .style("fill", "red") // the color is not mandatory as it is transparent
+      .style("fill", function(d) {return knnColors[knnClasses.indexOf(d[neighNumber[buttonFlag]])]; })
       .style("opacity", 0)
       .on("mouseover", function(d) {  
         div.transition()    
         .duration(200)    
-        .style("opacity", .9);    
+        .style("opacity", .9);
+
+        $(this).animate({opacity: .7},100);
 
         div.html("Number of Nearest Neighbors: " + "<strong>" + title_3 + "</strong>" + "<br/>" + 
          "KNN Prediction Score: " + "<strong>" + knnScores[buttonFlag] + "</strong>" + "<br/>" +
@@ -65,6 +69,8 @@ function createKNNMap(){
         div.transition()    
         .duration(500)    
         .style("opacity", 0);
+
+        $(this).animate({opacity: 0},100);
       });;
 
       //Setting onMouseClick event handler for buttons, set current clustering
