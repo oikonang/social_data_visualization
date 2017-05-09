@@ -29,13 +29,9 @@ label.select-label {
 }
 
 .userInputBarplot {
-    color: #800000;
+    color: #5b8583;
     font-weight: bold;
     font-style: italic;
-}
-
-#treeBarplot .bar {
-    fill: lightgreen;
 }
 
 #treeBarplot .bar:hover {
@@ -214,6 +210,7 @@ label.select-label {
 
 #clustering .sliderInfo {
     font-size: 24px;
+    background-color: transparent;
 }
 
 #clustering .centroids {
