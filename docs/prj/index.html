@@ -107,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h4 class="heading">Exploration</h4>
-                        <p> Driven by our curiosity, we started our analysis by looking at the most frequent complaints and their respective locations. </p>
+                        <p> Driven by curiosity, we started our analysis by looking at the most frequent complaints and their respective locations. </p>
                         <p>There is no better way to see our findings than seeing it by yourself! Just click anywhere in the map of New York City to get started.</p>
                         <div id="map_4"></div>
                         <!--<hr class="separator" />-->
@@ -120,8 +120,9 @@
                             them: if you haven't already you should definitely <a href="https://www.youtube.com/watch?v=6E1aXoESFrA&feature=youtu.be"><i>check it out!</i></a></p>
                         <p> Did you know for example that the most frequent complaint is 'Noise - Residential'? What do these New Yorkers do in their apartments at night??</p>
                         <p> Do you have even a pale idea of how many complaints get submitted through this service? In 2016 alone there have been 1 351 096 requests! That is 3700 requests IN A DAY, or 5 requests per minute!</p>
-                        <p> Do you want to know how the different New York agencies react to these requests? They are doing pretty well, last year the average time to resolution was a bunch more than 5000 minutes, or 3 days. In comparison, in 2010 one request
-                            took almost 19 days: quite an improvement!</p>
+                        <p> Do you want to know how the different New York agencies react to these requests? They are doing pretty well, last year the average time to resolution was around 5000 minutes, or 3 days. In comparison, in 2010 one request took in
+                            average 19 days to be resolved: quite an improvement!</p>
+                        <p> Below you can see some nice histograms that can tell you more about these stories. </p>
                     </div>
                 </div>
                 <div class="row">
@@ -151,30 +152,33 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="heading">House Complaints</h2>
-                        <p>blablabla
+                        <p> There are no less than 559 unique categories of Service Request in the dataset. Among them, one set particulary intrigued us: House complaints. New Yorkers just <i>love</i> to call 311 to complain about missing Hot Water and needed
+                            Plumbing.
                         </p>
+                        <p> We analysed how these complaints are spread across the year. We found out that people tend to complaint a lot less about Heating in August than in December. Who whould have said???</p>
+                        <p> The below graphs are much more explanatory than words.</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="box">
-                            <a href="img/housecompovermonths.png" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/housecompovermonths.png" alt="" class="img-responsive img-thumbnail"></a>
+                            <a href="img/housecompovermonths.png" data-toggle="lightbox" data-gallery="portfolio" data-title="House complaints across the year"><img src="img/housecompovermonths.png" alt="" class="img-responsive img-thumbnail"></a>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="box">
-                            <a href="img/housecompoverday.png" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/housecompoverday.png" alt="" class="img-responsive img-thumbnail"></a>
+                            <a href="img/housecompoverday.png" data-toggle="lightbox" data-gallery="portfolio" data-title="House complaints across the day"><img src="img/housecompoverday.png" alt="" class="img-responsive img-thumbnail"></a>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <!--<div class="col-sm-4">
                         <div class="box">
-                            <a href="img/houseratioperdistrict.png" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/houseratioperdistrict.png" alt="" class="img-responsive img-thumbnail"></a>
+                            <a href="img/houseratioperdistrict.png" data-toggle="lightbox" data-gallery="portfolio" data-title="BOH"><img src="img/houseratioperdistrict.png" alt="" class="img-responsive img-thumbnail"></a>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
+                    </div>-->
+                    <div class="col-sm-4">
                         <div class="box">
-                            <a href="img/ttrperhousecomp.png" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Portfolio image 1" data-footer="Some footer information"><img src="img/ttrperhousecomp.png" alt="" class="img-responsive img-thumbnail"></a>
+                            <a href="img/ttrperhousecomp.png" data-toggle="lightbox" data-gallery="portfolio" data-title="Time to resolution per complaint type"><img src="img/ttrperhousecomp.png" alt="" class="img-responsive img-thumbnail"></a>
                         </div>
                     </div>
                 </div>
@@ -182,80 +186,85 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h3 class="heading">Prediction</h3>
-                        blablabla
+                        <p> Doing some Machine Learning black magic, we built the below visualization regarding House Complaints. It is capable of predicting what disgrace can happen in your house if you happen to live in one of the main neighboroods of New
+                            York, at any given time of the year. Play around with it but don't consider us responsible for any water leak in your apartment. </p>
                     </div>
                 </div>
                 <!-- D3 VISUALIZATIONS FOR HOUSE COMPLAINTS -->
                 <!-- START DECISION TREE PREDICTION BARPLOT -->
-                <div id="treeBarplot">
+                <!--<div id="treeBarplot">
                     <p>What complaint should I expect if...</p>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <p>I live in ... <span id="districtTitle" class="userInputBarplot hidden">(district)</span></p>
+                        <div class="col-sm-3">
+                            <p>I live in ... <span id="districtTitle" class="userInputBarplot">(district)</span></p>
                             <p></p>
                         </div>
-                        <div class="col-sm-6" id="districtColumn">
+                        <div class="col-sm-9" id="districtColumn">
                             <select class="cs-select cs-skin-elastic" id="districtSelect">
 							    <option value="default" disabled selected>Choose district</option>
 						        </select>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <p>In ... <span id="monthTitle" class="userInputBarplot hidden">(month)</span></p>
+                        <div class="col-sm-3">
+                            <p>In ... <span id="monthTitle" class="userInputBarplot">(month)</span></p>
                         </div>
-                        <div class="col-sm-6" id="monthColumn">
+                        <div class="col-sm-9" id="monthColumn">
                             <select class="cs-select cs-skin-elastic" id="monthSelect">
 							    <option value="default" disabled selected>Choose month</option>
 						        </select>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <p>During the ... <span id="timeTitle" class="userInputBarplot hidden">(part of day)</span></p>
+                        <div class="col-sm-3">
+                            <p>During the ... <span id="timeTitle" class="userInputBarplot">(part of day)</span></p>
                         </div>
-                        <div class="col-sm-6" id="timeColumn">
+                        <div class="col-sm-9" id="timeColumn">
                             <select class="cs-select cs-skin-elastic" id="timeSelect">
 							    <option value="default" disabled selected>Choose the time of the day</option>
 						        </select>
                         </div>
                     </div>
-                </div>
+                </div>-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- START DECISION TREE PREDICTION BARPLOT -->
+                        <div id="treeBarplot">
+                            <p>What complaint should I expect if...</p>
+                            <p>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></p>
+                            <p>in... <span id="monthTitle" class="userInputBarplot">(month)</span></p>
+                            <p>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></p>
 
-                <!-- START DECISION TREE PREDICTION BARPLOT -->
-                <!--<div id="treeBarplot">
-                        <h2>What complaint should I expect if...</h2>
-                        <h3>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></h3>
-                        <h3>in... <span id="monthTitle" class="userInputBarplot">(month)</span></h3>
-                        <h3>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></h3>
-
-                        <div class="col-sm-4" id="districtColumn">
-                            <label class="select-label">Choose the NYC District:</label>
-                            <select class="cs-select cs-skin-elastic" id="districtSelect">
+                            <div class="col-sm-4" id="districtColumn">
+                                <label class="select-label">Choose the NYC District:</label>
+                                <select class="cs-select cs-skin-elastic" id="districtSelect">
 							<option value="default" disabled selected>Choose your option</option>
 						</select>
-                        </div>
+                            </div>
 
-                        <div class="col-sm-4" id="monthColumn">
-                            <label class="select-label">Choose the month:</label>
-                            <select class="cs-select cs-skin-elastic" id="monthSelect">
+                            <div class="col-sm-4" id="monthColumn">
+                                <label class="select-label">Choose the month:</label>
+                                <select class="cs-select cs-skin-elastic" id="monthSelect">
 							<option value="default" disabled selected>Choose your option</option>
 						</select>
-                        </div>
+                            </div>
 
-                        <div class="col-sm-4" id="timeColumn">
-                            <label class="select-label">Choose the time of day:</label>
-                            <select class="cs-select cs-skin-elastic" id="timeSelect">
+                            <div class="col-sm-4" id="timeColumn">
+                                <label class="select-label">Choose the time of day:</label>
+                                <select class="cs-select cs-skin-elastic" id="timeSelect">
 							<option value="default" disabled selected>Choose your option</option>
 						</select>
+                            </div>
                         </div>
                     </div>
-                </div>-->
-                <!-- END OF DECISION TREE BARPLOT -->
+                    <!-- END OF DECISION TREE BARPLOT -->
+                </div>
 
                 <div class="row">
                     <div class="col-md-12">
                         <h3 class="heading">Clustering</h3>
+                        <p> </p>
+
                         <div id="clustering">
                             <!--<a class="fancy_btn"></a>-->
                             <a class="fancy_btn"></a>
