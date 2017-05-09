@@ -231,11 +231,8 @@
                         <!-- START DECISION TREE PREDICTION BARPLOT -->
                         <div id="treeBarplot">
                             <p>What complaint should I expect if...</p>
-                            <p>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></p>
-                            <p>in... <span id="monthTitle" class="userInputBarplot">(month)</span></p>
-                            <p>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></p>
-
                             <div class="col-sm-4" id="districtColumn">
+                            	<p>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></p>
                                 <label class="select-label">Choose the NYC District:</label>
                                 <select class="cs-select cs-skin-elastic" id="districtSelect">
 							<option value="default" disabled selected>Choose your option</option>
@@ -243,6 +240,7 @@
                             </div>
 
                             <div class="col-sm-4" id="monthColumn">
+                            	<p>in... <span id="monthTitle" class="userInputBarplot">(month)</span></p>
                                 <label class="select-label">Choose the month:</label>
                                 <select class="cs-select cs-skin-elastic" id="monthSelect">
 							<option value="default" disabled selected>Choose your option</option>
@@ -250,6 +248,7 @@
                             </div>
 
                             <div class="col-sm-4" id="timeColumn">
+                            	<p>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></p>
                                 <label class="select-label">Choose the time of day:</label>
                                 <select class="cs-select cs-skin-elastic" id="timeSelect">
 							<option value="default" disabled selected>Choose your option</option>

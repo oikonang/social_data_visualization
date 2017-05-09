@@ -58,7 +58,7 @@ function createNYCMap(){
 
                 // Write staff on tooltip
                 div.html("Neighborhood: " + "<strong>" + d.properties.PO_NAME.toLowerCase().toUpperCase() + "</strong>" + "<br/>" + 
-                   "Total Number of Complaints: " + '<strong id="frequency"></strong>' + "<br/>" + 
+                   "Number of Complaints: " + '<strong id="frequency"></strong>' + "<br/>" + 
                    "Most Common Complaint: " + '<strong id="districtName"></strong>'
                    )
                 // Place the tooltip

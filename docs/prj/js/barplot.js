@@ -4,6 +4,7 @@ var height_1 = 400;
 var barPadding_1 = 80;
 var treePredictionsFile = "d3_data_files/decision_tree_predictions.json";
 var initBarplot = false;
+var barColors = ['#99ff66','#ff7733','#4db8ff'];
 
 function loadBarplotData(district,month,time) {
 	initBarplot = true;
@@ -46,7 +47,8 @@ function loadBarplotData(district,month,time) {
 		})
 		.classed("bar",true)
 		.styles({
-			width:  width_1/probabilities.length-barPadding_1
+			width:  width_1/probabilities.length-barPadding_1,
+			fill: function(d,i) {return barColors[i];}
 		});
 
 		//Draw bar names
