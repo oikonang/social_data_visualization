@@ -155,7 +155,7 @@
                         <p> There are no less than 559 unique categories of Service Request in the dataset. Among them, one set particulary intrigued us: House complaints. New Yorkers just <i>love</i> to call 311 to complain about missing Hot Water and needed
                             Plumbing.
                         </p>
-                        <p> We analysed how these complaints are spread across the year. We found out that people tend to complaint a lot less about Heating in August than in December. Who whould have said???</p>
+                        <p> We analysed how these complaints are spread across the year. We found out that people tend to complaint a lot less about Heating in August than in December. Who would have said???</p>
                         <p> The below graphs are much more explanatory than words and luckily they have no sense of humour.</p>
                     </div>
                 </div>
@@ -187,7 +187,8 @@
                     <div class="col-md-12">
                         <h3 class="heading">Prediction</h3>
                         <p> Doing some Machine Learning black magic, we built the below visualization regarding House Complaints. It is capable of predicting what disgrace can happen in your house if you happen to live in one of the main neighboroods of New
-                            York, at any given time of the year. Play around with it but don't consider us responsible for any water leak in your apartment. </p>
+                            York, at any given time of the year. </p>
+                        <p>Play around with it but don't consider us responsible for any water leak in your apartment. </p>
                     </div>
                 </div>
                 <!-- D3 VISUALIZATIONS FOR HOUSE COMPLAINTS -->
@@ -232,7 +233,7 @@
                         <div id="treeBarplot">
                             <p>What complaint should I expect if...</p>
                             <div class="col-sm-4" id="districtColumn">
-                            	<p>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></p>
+                                <p>I live in... <span id="districtTitle" class="userInputBarplot">(district)</span></p>
                                 <label class="select-label">Choose the NYC District:</label>
                                 <select class="cs-select cs-skin-elastic" id="districtSelect">
 							<option value="default" disabled selected>Choose your option</option>
@@ -240,7 +241,7 @@
                             </div>
 
                             <div class="col-sm-4" id="monthColumn">
-                            	<p>in... <span id="monthTitle" class="userInputBarplot">(month)</span></p>
+                                <p>in... <span id="monthTitle" class="userInputBarplot">(month)</span></p>
                                 <label class="select-label">Choose the month:</label>
                                 <select class="cs-select cs-skin-elastic" id="monthSelect">
 							<option value="default" disabled selected>Choose your option</option>
@@ -248,7 +249,7 @@
                             </div>
 
                             <div class="col-sm-4" id="timeColumn">
-                            	<p>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></p>
+                                <p>during the... <span id="timeTitle" class="userInputBarplot">(part of day)</span></p>
                                 <label class="select-label">Choose the time of day:</label>
                                 <select class="cs-select cs-skin-elastic" id="timeSelect">
 							<option value="default" disabled selected>Choose your option</option>
@@ -315,7 +316,10 @@
                     <div class="col-md-12">
                         <h4 class="heading">Prediction</h4>
                         <p> We then focused on geographic locations, the most interesting part of the data.</p>
-                        <p> As you may have understood by now, we are very fond of Machine Learning. We have </p>
+                        <p> As you may have understood by now, we are very fond of Machine Learning. We have trained a so-called K-Nearest Neighbour Classifier to predict the type of Noise Complaint, according to the geolocation of the data observation.
+                        </p>
+                        <p> Sounds complicated? Without any more useless wording, try yourself what we mean in the below visualization. Just hover with your mouse on any point of the map and try to change the value of K (number of Nearest Neighbours) by clicking
+                            on the fancy buttons.</p>
                         <div class="col-md-12">
                             <!-- START OF KNN MAP-->
                             <div class="btn-group-lg" role="group" aria-label="...">
